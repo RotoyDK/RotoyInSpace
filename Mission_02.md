@@ -1,7 +1,16 @@
+```customts
+basic.showLeds(`
+    . . # . .
+    . # . . .
+    # # # # #
+    . # . . .
+    . . # . .
+    `)
+```
+
 ```template
-for (let index = 0; index < 2; index++) {
-    music.playTone(494, music.beat(BeatFraction.Whole))
-}
+input.onButtonPressed(Button.A, function () {
+})
 ```
 
 ```package
