@@ -14,7 +14,9 @@
         "main.ts",
         "README.md",
         "custom.ts",
-        "Mission_02.md"
+        "Mission_02.md",
+        "Mission_03.md",
+        "Mission_04.md"
     ],
     "testFiles": [
         "test.ts"
