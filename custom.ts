@@ -58,3 +58,20 @@ namespace Mission6 {
         }
     }
 }
+
+/**
+ * Custom blocks
+ */
+//% weight=100 color=#3958D3 icon="\uf06b"
+namespace Mission7 {
+
+    //% block="shake"
+    export function Shake() {
+        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 50)
+        maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 50)
+        basic.pause(100)
+        maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 50)
+        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 50)
+        basic.pause(100)
+    }
+}
