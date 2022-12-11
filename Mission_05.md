@@ -1,7 +1,3 @@
-```customts
-Mission5.strip = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
-```
-
 ```package
 maqueen=github:dfrobot/pxt-maqueen#v1.7.2
 ```
@@ -50,12 +46,17 @@ basic.forever(function () {
 
 ``||basic:forever||`` is quite special because it is called a loop, because it loops over and over. micro:bit has other loops that we will talk about in different missions.
 
-## Step 7 @showhint
+## Step 7
 
-Now, let's get to work. Rotoy should alert you and run away when the **Toad** is near. Let's say 10cm. To do that, we also need ``||Logic:if () else ()||`` condition. So how it will work is:
-- ``||Logic:if||`` **Toad** is further away than 10cm, don't do anaything - so you don't have to put anything there,
-- ``||Logic:else||`` **Toad** is closer than 10cm, Rotoy needs to turn on his lights, turn around and run away.
-The empty ``||Logic:if () else ()||`` will look something like that:
+Ok, now one more new thing, let's say we want to display sad or happy face when **Toad** is nearby. To do that, we need ``||Logic:if () else ()||`` condition. So how it will work is:
+- ``||Logic:if||`` **Toad** is further away than 10cm, display happy face,
+- ``||Logic:else||`` **Toad** is closer than 10cm, display sad face.
+
+## Step 8 @showhint
+
+Inside of ``||Logic:if ()||``, you need to place a condition to check if **Toad** is already close or not. For that, you'll need to check if the value ``||Maqueen:reas ultrasonic sensor [cm]||`` is greater or smaller than 10 cm.
+
+Check out this empty code here:
 
 ```block
 if (maqueen.Ultrasonic(PingUnit.Centimeters) > 10) {
@@ -65,41 +66,16 @@ if (maqueen.Ultrasonic(PingUnit.Centimeters) > 10) {
 }
 ```
 
-## Step 8
-
-Now, we need to figure how to make Rotoy to turn by 180 degrees (turn around). You know how to move each motor by now, but it's a bit more difficult to program Rotoy to make perfect 180° turn. That's because micro:bit can only use time, not degrees, so we cannot tell Rotoy to turn by 180 degrees. Instead we have to tell Rotoy to turn for certain amount of time in milliseconds, and than number will change from Rotoy to Rotoy and battery levels, so you need to experiment with it.
-
-To make things easier, micro:bit prepared for you block ``||Mission5:turn for [] ms||``, so you just need to fill it out, ``|Download|`` the code and test it until you get nice 180° turn. Remember to place ``||maqueen:motor [all] stop||`` at the end.
-
-```blocks
-Mission5.Turn(100)
-maqueen.motorStop(maqueen.Motors.All)
-```
-
 ## Step 9
 
-Then, you just need to add ``||Mission5:go straight for [] ms||`` and also fill it out - let's say we want Rotoy to run away for 1000 ms.
-
-The last bit is to tell Rotoy to turn on it's lights when **Toad** is detected - use ``||Mission5:flash lights []||`` and set it to ``||Logic:true||`` when **Toad** is near and ``||Logic:false||`` otherwise.
-
-Place everything in forever loop, so that Rotoy constantly checks if **Toad** is nearby!
-
-## Step 10
-
-Here's some hint if you need it.
+Now just add displaying sad or happy face. Place everything in ``||basic:forever||`` loop to continously check if **Toad** is nearby. ``|Download|`` the code and test it. Come back to the chapter!
 
 ```block
 basic.forever(function () {
     if (maqueen.Ultrasonic(PingUnit.Centimeters) > 10) {
-    	Mission5.Flash(false)
+        basic.showIcon(IconNames.Sad)
     } else {
-        Mission5.Flash(true)
-        Mission5.Turn(100)
-        Mission5.goStraight(1000)
-        maqueen.motorStop(maqueen.Motors.All)
+        basic.showIcon(IconNames.Happy)
     }
 })
 ```
-
-## Step 11
-``|Download|`` the code and test it. Could Rotoy escape from the toad? Come back to the chapter!

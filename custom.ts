@@ -31,7 +31,7 @@ namespace Mission2 {
  * Custom blocks
  */
 //% weight=100 color=#3958D3 icon="\uf06b"
-namespace Mission5 {
+namespace Mission6 {
     export let strip: neopixel.Strip = null
 
     //% block="go straight for %time ms"
