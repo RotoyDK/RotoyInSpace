@@ -1,5 +1,5 @@
 ```customts
-Mission6.listBeat = [
+Mission8.listBeat = [
         music.beat(BeatFraction.Whole),
         music.beat(BeatFraction.Whole),
         music.beat(BeatFraction.Whole),
@@ -99,7 +99,7 @@ Mission6.listBeat = [
         music.beat(BeatFraction.Double),
         music.beat(BeatFraction.Double)
     ]
-Mission6.listTone = [
+Mission8.listTone = [
         294,
         494,
         440,
