@@ -1,6 +1,7 @@
 ```customts
 control.inBackground(function () {
     while (true) {
+        basic.showNumber(input.temperature())
         if (input.temperature() >= 23) {
             basic.showIcon(IconNames.Happy)
         } else {
