@@ -1,4 +1,4 @@
-```template
+```customts
 Mission5.strip = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
 ```
 
