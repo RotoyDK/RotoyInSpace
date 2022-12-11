@@ -94,5 +94,56 @@ namespace Mission8 {
             music.playTone(listTone[index], listBeat[index])
             index += 1
         }
+        basic.clearScreen()
+    }
+}
+
+/**
+ * Custom blocks
+ */
+//% weight=100 color=#3958D3 icon="\uf06b"
+namespace Mission10 {
+    export let led3: neopixel.Strip = null
+    export let led2: neopixel.Strip = null
+    export let led1: neopixel.Strip = null
+    export let led0: neopixel.Strip = null
+    export let strip: neopixel.Strip = null
+
+    //% block="go straight for %time ms"
+    export function goStraight(time: number) {
+        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 100)
+        basic.pause(time)
+    }
+
+    //% block="go right for %time ms"
+    export function goRight(time: number) {
+        maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 100)
+        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 100)
+        basic.pause(time)
+    }
+
+    //% weight=90
+    //% block="flash lights %on"
+    export function Flash(on: boolean) {
+        if (on) {
+            if (Math.randomBoolean()) {
+                led0.showColor(neopixel.colors(NeoPixelColors.Red))
+                led2.showColor(neopixel.colors(NeoPixelColors.Red))
+                led1.showColor(neopixel.colors(NeoPixelColors.Green))
+                led3.showColor(neopixel.colors(NeoPixelColors.Green))
+            } else {
+                led1.showColor(neopixel.colors(NeoPixelColors.Red))
+                led3.showColor(neopixel.colors(NeoPixelColors.Red))
+                led0.showColor(neopixel.colors(NeoPixelColors.Green))
+                led2.showColor(neopixel.colors(NeoPixelColors.Green))
+            }
+            maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOn)
+            maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOn)
+        }
+        else {
+            strip.showColor(neopixel.colors(NeoPixelColors.Black))
+            maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOff)
+            maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOff)
+        }
     }
 }
