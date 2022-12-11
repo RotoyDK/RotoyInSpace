@@ -1,9 +1,9 @@
 ```customts
-Mission23.strip = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
-Mission23.led0 = Mission23.strip.range(0, 1)
-Mission23.led1 = Mission23.strip.range(1, 1)
-Mission23.led2 = Mission23.strip.range(2, 1)
-Mission23.led3 = Mission23.strip.range(3, 1)
+Mission10.strip = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
+Mission10.led0 = Mission10.strip.range(0, 1)
+Mission10.led1 = Mission10.strip.range(1, 1)
+Mission10.led2 = Mission10.strip.range(2, 1)
+Mission10.led3 = Mission10.strip.range(3, 1)
 ```
 
 ```package
@@ -21,8 +21,8 @@ Program Rotoy to dance around the wooden tree from the box!
 
 micro:bit has already prepared for you blocks ``||Mission10:goRight||`` and ``||Mission10:goStraight||``.
 Try to make a program that will make Alfie do a square around a Christmas tree. For that you need to change time in ms:
-- in ``||Mission10:goRight||`` to make a 90° right turn,
-- in ``||Mission10:goStraight||`` to set the length of going straight, take a tape measure and try to set that Rotoy goes 30 cm.
+- in ``||Mission10:go right for [] ms||`` to make a 90° right turn,
+- in ``||Mission10:go straight for [] ms||`` to set the length of going straight, take a tape measure and try to set that Rotoy goes 30 cm.
 
 Remember to stop motors at the end - ``||maqueen:motor [all] stop||``.
 
@@ -30,7 +30,7 @@ Play and experiment until you have a nice square path around a Christmas tree. `
 
 ## Step 3
 
-Have you noticed something? You needed to use ``||Mission10:call goRight||`` and ``||Mission10:call goStraight ||`` 4 times. Do you think we can reduce it? Go next to find out!
+Have you noticed something? You needed to use ``||Mission10:go right for [] ms||`` and ``||Mission10:go straight for [] ms||`` 4 times. Do you think we can reduce it? Go next to find out!
 
 ## Step 4
 
