@@ -255,6 +255,7 @@ Here's some hint if you need it:
 ```blocks
 input.onSound(DetectedSound.Loud, function () {
     clapNumber += 1
+    basic.showNumber(clapNumber)
 })
 let clapNumber = 0
 basic.forever(function () {
