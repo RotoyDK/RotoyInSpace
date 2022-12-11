@@ -75,3 +75,23 @@ namespace Mission7 {
         basic.pause(100)
     }
 }
+
+/**
+ * Custom blocks
+ */
+//% weight=100 color=#3958D3 icon="\uf06b"
+namespace Mission8 {
+    export let index: number
+    export let listTone: number[]
+    export let listBeat: number[]
+
+    //% weight=90
+    //% block="play song"
+    export function playSong() {
+        index = 0
+        while (index < listTone.length) {
+            music.playTone(listTone[index], listBeat[index])
+            index += 1
+        }
+    }
+}
