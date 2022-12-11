@@ -89,6 +89,7 @@ namespace Mission8 {
     //% block="play song"
     export function playSong() {
         index = 0
+        basic.showIcon(IconNames.Heart)
         while (index < listTone.length) {
             music.playTone(listTone[index], listBeat[index])
             index += 1

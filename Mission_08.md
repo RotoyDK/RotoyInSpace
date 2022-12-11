@@ -246,7 +246,7 @@ input.onSound(DetectedSound.Loud, function () {
 
 ## Step 7
 
-Awesome, now just throw ``||Logic:if||`` that checks if ``||variables:clapNumber||`` is equal to 5 in ``||Basic:forever||`` loop. And if it is - turn on the song - ``||Mission8:play song||``!
+Awesome, now just throw ``||Logic:if||`` that checks if ``||variables:clapNumber||`` is equal to 5 in ``||Basic:forever||`` loop. And if it is - turn on the song - ``||Mission8:play song||``! You can also reset it after 5 back to 0 by setting ``||variables:set clapNumber to [0]||``
 
 ## Step 8
 
@@ -261,6 +261,7 @@ let clapNumber = 0
 basic.forever(function () {
     if (clapNumber == 5) {
     	Mission8.playSong()
+        clapNumber = 0
     }
 })
 ```
