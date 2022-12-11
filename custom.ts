@@ -26,3 +26,35 @@ namespace Mission2 {
         music.stopAllSounds()
     }
 }
+
+/**
+ * Custom blocks
+ */
+//% weight=100 color=#3958D3 icon="\uf06b"
+namespace Mission5 {
+    export let strip: neopixel.Strip = null
+
+    //% block="go straight for %time ms"
+    export function goStraight(time: number) {
+        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 100)
+        basic.pause(time)
+    }
+
+    //% block="turn for %time ms"
+    export function Turn(time: number) {
+        maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 100)
+        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 100)
+        basic.pause(time)
+    }
+
+    //% weight=90
+    //% block="flash lights %on"
+    export function Flash(on: boolean) {
+        if (on) {
+            strip.showColor(neopixel.colors(NeoPixelColors.Red))
+        }
+        else {
+            strip.showColor(neopixel.colors(NeoPixelColors.Black))
+        }
+    }
+}

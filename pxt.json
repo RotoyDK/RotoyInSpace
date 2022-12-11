@@ -16,7 +16,8 @@
         "custom.ts",
         "Mission_02.md",
         "Mission_03.md",
-        "Mission_04.md"
+        "Mission_04.md",
+        "Mission_05.md"
     ],
     "testFiles": [
         "test.ts"
