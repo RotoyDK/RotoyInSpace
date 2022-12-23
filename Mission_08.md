@@ -220,11 +220,11 @@ micro:bit uses red blocks ``||variables:Variables||``, to create a new variable,
 
 Ok, let's try it with an example.
 
-We want Rotoy to sing a song after you clap 5 times, so let's create new variable called ``||variables:clapNumber||``.
+We want Rotoy to sing a song after you clap 5 times, so let's create a new variable called ``||variables:clapNumber||``.
 
 ## Step 4 @showhint
 
-We have a variable now, but it's empty, to give it some value, we need to use block ``||variables:set clapNumber to||``. Let's set it to 0, because at the beginning you didn't clap at all.
+We have a variable now, but it's empty, to give it some value, we need to use block ``||variables:set clapNumber to||``. Let's set it to 0 because at the beginning you didn't clap at all.
 
 ```blocks
 let clapNumber = 0
@@ -260,7 +260,7 @@ input.onSound(DetectedSound.Loud, function () {
 let clapNumber = 0
 basic.forever(function () {
     if (clapNumber == 5) {
-    	Mission8.playSong()
+        Mission8.playSong()
         clapNumber = 0
     }
 })

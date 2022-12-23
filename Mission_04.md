@@ -14,7 +14,7 @@ Make Rotoy move using the wheels
 
 ## Step 1
 
-In the second missions you made Rotoy dance, but micro:bit helped you, now it's time to learn how to do it yourself!
+In the second mission you made Rotoy dance, but micro:bit helped you, now it's time to learn how to do it yourself!
 
 ## Step 2
 
@@ -24,9 +24,9 @@ All the necessary blocks are in ``||maqueen:Maqueen||`` tab in your **Toolbox** 
 ## Step 3 @showhint
 
 To move one of the wheels you need to turn them on, use ``||maqueen:motor [] move [] at speed []||``.
-For example, we can set both wheels (``||maqueen:all||``) to move forward (``||maqueen:Forward||``), so that Rotoy goes straight. We also need to say how fast the wheels should sping, with 0 being stopped and 255 going really fast - but you already now that!
+For example, we can set both wheels (``||maqueen:all||``) to move forward (``||maqueen:Forward||``), so that Rotoy goes straight. We also need to say how fast the wheels should sping, with 0 being stopped and 255 going really fast - but you already know that!
 
-Check out this block - it makes Rotoy go straight at a speed 100.
+Check out this block - it makes Rotoy go straight at a speed of 100.
 
 ```block
 maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 100)
@@ -38,7 +38,7 @@ But how do we make Rotoy spin?
 
 He needs to turn around himself! To do that, we need to set one wheel to spin in one direction, and the other in opposite direction.
 
-For example, let's set left wheel to spin forward, and right wheel to spin backward. And change the speed to 100 for both wheels. Place the right blocks and use the hint if you need help!
+For example, let's set the left wheel to spin forward, and the right wheel to spin backward. And change the speed to 100 for both wheels. Place the right blocks and use the hint if you need help!
 
 ```block
     maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 100)
@@ -55,7 +55,7 @@ maqueen.motorStop(maqueen.Motors.All)
 
 ## Step 6
 
-Try now to write a code that makes Rotoy spin around and stops the motors afterwards. ``|Download|`` the code and test it!
+Try now to write a code that makes Rotoy spin around and stops the motors afterward. ``|Download|`` the code and test it!
 
 Did it work? No? Click next to find out why!
 
@@ -71,7 +71,7 @@ But do not worry, we can easily fix it!
 We need one more piece in our code ``||basic:pause (ms) []||``. Using pause, we tell micro:bit to wait for some time until it takes the next block, in that case until it turns off the wheels.
 Also, just so you know 1 second (s) equals 1000 milliseconds (ms), so don't be afraid to put big numbers in ``||basic:pause (ms) []||``.
 
-Check out this example - now we turn on wheels, let Rotoy spin for 1 second and then stop the wheels:
+Check out this example - now we turn on the wheels, let Rotoy spin for 1 second, and then stop the wheels:
 
 ```block
 maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 100)

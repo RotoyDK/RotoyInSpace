@@ -18,7 +18,7 @@ Inside ``||basic:on start||`` block is ``||music:play tone Middle B for 1 beat||
 
 ## Step 4 @showhint
 
-Now, it's time to use your skills to program music notes and create Christmas song! To add more notes, open Music category and drag another ``||music:play tone||``
+Now, it's time to use your skills to program music notes and create a Christmas song! To add more notes, open the Music category and drag another ``||music:play tone||``
 
 Hit next to get the first set of notes!
 

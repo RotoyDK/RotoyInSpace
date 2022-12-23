@@ -20,7 +20,7 @@ Program Rotoy to dance around the wooden tree from the box!
 ## Step 1
 
 micro:bit has already prepared for you blocks ``||Mission10:goRight||`` and ``||Mission10:goStraight||``.
-Try to make a program that will make Alfie do a square around a Christmas tree. For that you need to change time in ms:
+Try to make a program that will make Alfie do a square around a Christmas tree. For that you need to change the time in ms:
 - in ``||Mission10:go right for [] ms||`` to make a 90° right turn,
 - in ``||Mission10:go straight for [] ms||`` to set the length of going straight, take a tape measure and try to set that Rotoy goes 30 cm.
 

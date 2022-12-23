@@ -28,14 +28,14 @@ We will pick up where we finished in the last mission. Your **Workspace** has al
 ## Step 2
 
 So Rotoy should alert you and run away when ** King Toad** is near. Let's say 10cm. So how it will work is:
-- ``||Logic:if||`` **King Toad** is further away than 10cm, don't do anaything - so you don't have to put anything there,
+- ``||Logic:if||`` **King Toad** is further away than 10cm, don't do anything - so you don't have to put anything there,
 - ``||Logic:else||`` **King Toad** is closer than 10cm, Rotoy needs to turn on his lights, turn around and run away.
 
 ## Step 3 @showhint
 
-Now, we need to figure how to make Rotoy to turn by 180 degrees (turn around). You know how to move each motor by now, but it's a bit more difficult to program Rotoy to make perfect 180° turn. That's because micro:bit can only use time, not degrees, so we cannot tell Rotoy to turn by 180 degrees. Instead we have to tell Rotoy to turn for certain amount of time in milliseconds, and than number will change from Rotoy to Rotoy and battery levels, so you need to experiment with it.
+Now, we need to figure out how to make Rotoy turn by 180 degrees (turn around). You know how to move each motor by now, but it's a bit more difficult to program Rotoy to make a perfect 180° turn. That's because micro:bit can only use time, not degrees, so we cannot tell Rotoy to turn by 180 degrees. Instead, we have to tell Rotoy to turn for a certain amount of time in milliseconds, and that number will change from Rotoy to Rotoy and its battery levels, so you need to experiment with it.
 
-To make things easier, micro:bit prepared for you block ``||Mission6:turn for [] ms||``, so you just need to fill it out, ``|Download|`` the code and test it until you get nice 180° turn. Remember to place ``||maqueen:motor [all] stop||`` at the end.
+To make things easier, micro:bit prepared for you block ``||Mission6:turn for [] ms||``, so you just need to fill it out, ``|Download|`` the code and test it until you get a nice 180° turn. Remember to place ``||maqueen:motor [all] stop||`` at the end.
 
 ```blocks
 Mission6.Turn(100)
@@ -46,9 +46,9 @@ maqueen.motorStop(maqueen.Motors.All)
 
 Then, you just need to add ``||Mission6:go straight for [] ms||`` and also fill it out - let's say we want Rotoy to run away for 1000 ms.
 
-The last bit is to tell Rotoy to turn on it's lights when **Toad** is detected - use ``||Mission6:flash lights []||`` and set it to ``||Logic:true||`` when **King Toad** is near and ``||Logic:false||`` otherwise.
+The last bit is to tell Rotoy to turn on its lights when **Toad** is detected - use ``||Mission6:flash lights []||`` and set it to ``||Logic:true||`` when **King Toad** is near and ``||Logic:false||`` otherwise.
 
-Place everything in forever loop, so that Rotoy constantly checks if **Toad** is nearby!
+Place everything in a forever loop, so that Rotoy constantly checks if **Toad** is nearby!
 
 ## Step 5
 
@@ -57,7 +57,7 @@ Here's some hint if you need it.
 ```block
 basic.forever(function () {
     if (maqueen.Ultrasonic(PingUnit.Centimeters) > 10) {
-    	Mission6.Flash(false)
+        Mission6.Flash(false)
     } else {
         Mission6.Flash(true)
         Mission6.Turn(100)

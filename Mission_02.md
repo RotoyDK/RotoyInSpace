@@ -29,8 +29,8 @@ Everything that Rotoy does is through micro:bit - Rotoy's brain! And micro:bit d
 
 ## Step 2
 
-First, there is a main **Workspace** - that's this large area under this text, that where you have to place all the code for micro:bit.
-Those colorful table on your left is your **Toolbox**, all necessary code for each mission will be sitting here. You'll see that different missions will have different rows here.
+First, there is a main **Workspace** - that's this large area under this text, where you have to place all the code for micro:bit.
+The colorful table on your left is your **Toolbox**, all necessary code for each mission will be sitting here. You'll see that different missions will have different rows here.
 Then on the left, you can see a virtual version of micro:bit - once you make your code, you can click play to test it (except any stuff related to moving Rotoy will not be possible to test virtually).
 
 ## Step 3
@@ -60,7 +60,7 @@ input.onButtonPressed(Button.A, function () {
 
 Awesome, now let's get back to our mission. So we want to make Rotoy dance, to do so micro:bit prepared for you this nice block ``||Mission2:dance with speed []||``.
 
-You can delete ``||Basic:show icon []||`` and replace it with ``||Mission2:dance with speed []||``. Now, you just need to type a number that represents speed of Rotoy, and the number can be between **0-255**, with:
+You can delete ``||Basic:show icon []||`` and replace it with ``||Mission2:dance with speed []||``. Now, you just need to type a number that represents the speed of Rotoy, and the number can be between **0-255**, with:
 - **0** - Rotoy doesn't move at all,
 - **255** - Rotoy is very fast.
 
