@@ -6,7 +6,7 @@ music.playTone(494, music.beat(BeatFraction.Whole))
 
 ## Introduction @showdialog
 
-Use the music notes to make Rotoy play happy music.
+Use the music notes to make Rotoy play Christmas music.
 
 ## Step 1
 
