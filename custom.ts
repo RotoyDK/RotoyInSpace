@@ -3,6 +3,24 @@
 * Read more at https://makecode.microbit.org/blocks/custom
 */
 
+
+/**
+ * Custom blocks
+ */
+//% weight=100 color=#43228e icon="\uf197" block="Mission 1"
+namespace Module1_M1 {
+    //% weight=90
+    //% block="start rover"
+    export function startRover() {
+        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 150)
+    }
+    //% weight=90
+    //% block="stop rover"
+    export function stopRover() {
+        maqueen.motorStop(maqueen.Motors.All)
+    }
+}
+
 /**
  * Custom blocks
  */
