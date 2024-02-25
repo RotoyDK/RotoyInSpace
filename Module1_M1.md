@@ -41,9 +41,9 @@ input.onButtonPressed(Button.B, function () {
 
 ## Step 6
 
-Great! Now - we know that Soren can control the rover. He uses 2 different commands: ``||Module1_MD1:start rover||`` to move the rover, and ``||Module1_MD1:stop rover||`` to stop the rover.
+Great! Now - we know that Soren can control the rover. He uses 2 different commands: ``||Module1_M1:start rover||`` to move the rover, and ``||Module1_M1:stop rover||`` to stop the rover.
 
-You can check them out in ``||Module1_MD1:Mission 1||`` in the **Toolbox**.
+You can check them out in ``||Module1_M1:Mission 1||`` in the **Toolbox**.
 
 ## Step 7 @showhint
 
@@ -51,7 +51,7 @@ To connect it with the buttons, we have to put commands under the correct button
 
 ```block
 input.onButtonPressed(Button.A, function () {
-    Module1_MD1.startRover()
+    Module1_M1.startRover()
 })
 ```
 
