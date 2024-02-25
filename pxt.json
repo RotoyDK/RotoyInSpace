@@ -1,5 +1,5 @@
 {
-    "name": "Braveland_v2",
+    "name": "Rotoy in Space",
     "version": "1.0.0",
     "description": "",
     "dependencies": {
@@ -21,13 +21,14 @@
         "Mission_06.md",
         "Mission_07.md",
         "Mission_08.md",
-        "Mission_10.md"
+        "Mission_10.md",
+        "Module1_M1.md"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "5.0.12",
+        "target": "6.0.25",
         "targetId": "microbit"
     },
     "supportedTargets": [
