@@ -19,7 +19,7 @@ Can you help Soren program the rover and start the Mars experiments?
 
 ## Step 1
 
-Your robot has two button inputs, ``||input:A||`` and ``||input:B||``. You can find their programming blocks in the **Toolbox** under ``||input:Input||``. Clicking on `||input:Input||`` toolbox will show you all the available programming blocks. Try it now!
+Your robot has two button inputs, ``||input:A||`` and ``||input:B||``. You can find their programming blocks in the **Toolbox** under ``||input:Input||``. Clicking on ``||input:Input||`` toolbox will show you all the available programming blocks. Try it now!
 
 ## Step 2 @showhint
 
