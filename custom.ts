@@ -9,15 +9,59 @@
  */
 //% weight=100 color=#43228e icon="\uf197" block="Mission 1"
 namespace Module1_M1 {
+    export let led3: neopixel.Strip = null
+    export let led2: neopixel.Strip = null
+    export let led1: neopixel.Strip = null
+    export let led0: neopixel.Strip = null
+    export let strip: neopixel.Strip = null
+    
+    // //% weight=90
+    // //% block="start rover"
+    // export function startRover() {
+    //     maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 150)
+    // }
+    // //% weight=90
+    // //% block="stop rover"
+    // export function stopRover() {
+    //     maqueen.motorStop(maqueen.Motors.All)
+    // }
+
     //% weight=90
-    //% block="start rover"
-    export function startRover() {
-        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 150)
-    }
-    //% weight=90
-    //% block="stop rover"
-    export function stopRover() {
-        maqueen.motorStop(maqueen.Motors.All)
+    //% block="Mars experiment to %on"
+    export function marsExperiment(on: boolean) {
+        if (on) {
+            led0.showColor(neopixel.colors(NeoPixelColors.Red))
+            basic.pause(100)
+            led1.showColor(neopixel.colors(NeoPixelColors.Red))
+            basic.pause(100)
+            led2.showColor(neopixel.colors(NeoPixelColors.Red))
+            basic.pause(100)
+            led3.showColor(neopixel.colors(NeoPixelColors.Red))
+            basic.pause(100)
+            led0.showColor(neopixel.colors(NeoPixelColors.Black))
+            led1.showColor(neopixel.colors(NeoPixelColors.Black))
+            led2.showColor(neopixel.colors(NeoPixelColors.Black))
+            led3.showColor(neopixel.colors(NeoPixelColors.Black))
+            basic.pause(100)
+            for (let i = 0; i < 5; i++) {
+                led0.showColor(neopixel.colors(NeoPixelColors.Red))
+                led1.showColor(neopixel.colors(NeoPixelColors.Red))
+                led2.showColor(neopixel.colors(NeoPixelColors.Red))
+                led3.showColor(neopixel.colors(NeoPixelColors.Red))
+                basic.pause(100)
+                led0.showColor(neopixel.colors(NeoPixelColors.Black))
+                led1.showColor(neopixel.colors(NeoPixelColors.Black))
+                led2.showColor(neopixel.colors(NeoPixelColors.Black))
+                led3.showColor(neopixel.colors(NeoPixelColors.Black))
+            }
+            maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOn)
+            maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOn)
+        }
+        else {
+            strip.showColor(neopixel.colors(NeoPixelColors.Black))
+            maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOff)
+            maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOff)
+        }
     }
 }
 

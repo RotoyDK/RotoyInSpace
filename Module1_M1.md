@@ -1,36 +1,29 @@
+```customts
+Module1_M1.strip = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
+Module1_M1.led0 = Module1_M1.strip.range(0, 1)
+Module1_M1.led1 = Module1_M1.strip.range(1, 1)
+Module1_M1.led2 = Module1_M1.strip.range(2, 1)
+Module1_M1.led3 = Module1_M1.strip.range(3, 1)
+```
+
 ```package
 maqueen=github:dfrobot/pxt-maqueen#v1.7.2
+neopixel=github:microsoft/pxt-neopixel#v0.7.3
 ```
 
 # Mission 1
 
 ## Introduction @showdialog
 
-Help Soren finish his programs and start the rover experiments!
+Can you help Soren program the rover and start the Mars experiments? 
 
 ## Step 1
 
-Everything that Rotoy does is through micro:bit - Rotoy's brain! And micro:bit does everything you tell it to do by programming it! So let me tell you how to do stuff with micro:bit.
+Your robot has two button inputs, ``||input:A||`` and ``||input:B||``. You can find their programming blocks in the **Toolbox** under ``||input:Input||``. Clicking on `||input:Input||`` toolbox will show you all the available programming blocks. Try it now!
 
-## Step 2
+## Step 2 @showhint
 
-First, there is a main **Workspace** - that's this large area under this text, where you have to place all the code for micro:bit.
-The colorful table on your left is your **Toolbox**, all necessary code for each mission will be sitting here. You'll see that different missions will have different rows here.
-Then on the left, you can see a virtual version of micro:bit - once you make your code, you can click play to test it (except any stuff related to moving Rotoy will not be possible to test virtually).
-
-## Step 3
-
-That should be enough information for the beginning!
-
-Let's start with the mission!!!
-
-## Step 4
-
-Rotoy has 2 buttons - ``||input:A||`` and ``||input:B||``. You can find them in the category ``||input:Input||``.
-
-## Step 5
-
-Put 2 buttons (1 for button ``||input:A||`` and 1 for button ``||input:B||``) in the **Workspace**. You can check how it should look in the hint!
+To start your program, drag two ``||input:on button A pressed||`` blocks into the **Workspace**. Right now, both blocks are assigned to the A button, but you can adjust that by pressing on the small arrow to the right of the letter ``||input:A||`` and changing it to ``||input:B||``. 
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -39,26 +32,40 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
+## Step 3
+
+You should now have ``||input:two input button||`` blocks in your **Workspace**, one for ``||input:A||`` and one for ``||input:B||``. You may have noticed that the space inside the button blocks look like a puzzle piece. This space allows you to add or remove blocks to build your program! Anything you add to the button block, will only run when you press that button. 
+
+## Step 4
+
+Now that we have our two button blocks, let's make them do something. Let’s click on the ``||Module1_M1:Mission 1||`` toolbox and drag two of the ``||Module1_M1:Mars experiment to||`` blocks into our **Workspace**. This block will simulate your robot conducting experiments on Mars. 
+
+## Step 5
+
+Next, change one of the ``||Module1_M1:Mars experiment to||`` blocks in the space after the word ‘to’ to ``||logic:true||``. Now, do the same thing with the ``||logic:false||`` logic block in the other ``||Module1_M1:Mars experiment to||`` block. The ``||logic:true||`` block acts as an ‘on’ and the ``||logic:false||`` block acts like an ‘off’. Click on the hint button if you get stuck.
+
+```blocks
+Module1_M1.marsExperiment(true)
+Module1_M1.marsExperiment(false)
+```
+
 ## Step 6
 
-Great! Now - we know that Soren can control the rover. He uses 2 different commands: ``||Module1_M1:start rover||`` to move the rover, and ``||Module1_M1:stop rover||`` to stop the rover.
-
-You can check them out in ``||Module1_M1:Mission 1||`` in the **Toolbox**.
+You’ve done a great job so far! Now grab the ``||logic:true||`` ``||Module1_M1:Mars experiment to||`` block and drop it in the button ``||input:A||`` block. With that done, do the same thing with the ``||logic:false||`` ``||Module1_M1:Mars experiment to||`` block and drop it in the button ``||input:B||`` block. 
 
 ## Step 7 @showhint
 
-To connect it with the buttons, we have to put commands under the correct buttons. For example, if you want to start the rover when pressing button A, the code will look like this:
+Wow, you did it! Let’s take a moment to review what you have programmed so far. You took two ``||input:input||`` blocks and assigned them to buttons ``||input:A||`` and ``||input:B||``. You then assigned two variables called ``||Module1_M1:Mars experiment to||`` to those buttons, one ``||logic:true||`` and one ``||logic:false||``. Click on the hint button for the full code if you are feeling stuck.
 
-```block
+```blocks
 input.onButtonPressed(Button.A, function () {
-    Module1_M1.startRover()
+    Module1_M1.marsExperiment(true)
+})
+input.onButtonPressed(Button.B, function () {
+    Module1_M1.marsExperiment(false)
 })
 ```
 
 ## Step 8
 
-Ok, so now Soren can turn on the rover with button A, we also need to help him stop it. Let's set button B to stop the rover!
-
-## Step 6
-
-Once you are ready, ``|Download|`` your code and return to Rotoy PLAY!
+Great job! Its time to test your code. Turn on your robot, connect it to your computer, and hit the purple ``|Download|`` button in the bottom left hand corner of the MakeCode screen. Try pressing the ``||input:A||`` and ``||input:B||`` buttons and see if you can describe what is happening. When you are done, don’t forget to go back and complete Soren’s Epic Adventure.
