@@ -23,6 +23,7 @@ Can you help Soren start the rover and begin the Mars experiments?
 In the **Workspace**, you should have an empty ``||basic:forever||`` block. If you don’t see a ``||basic:forever||`` block in your **Workspace**, you can click on the ``||basic:Basic||`` toolbox and add a ``||basic:forever||`` block that way. The ``||basic:forever||`` block tells your program how often to repeat the instructions placed inside it. In this case, those instructions will run (or loop) as long as the program is running.
 
 ```blocks
+// @highlight
 basic.forever(function () {
 })
 ```
@@ -33,6 +34,7 @@ In order for Soren to start the rover’s experiments, he will need to tell the 
 
 ```blocks
 basic.forever(function () {
+    // @highlight
     Module1_M1.moveForward(false)
 })
 ```
@@ -44,6 +46,7 @@ Great job! Our rover is ready to move forward, but Mars is a rocky planet. What 
 ```blocks
 basic.forever(function () {
     Module1_M1.moveForward(false)
+    // @highlight
     Module1_M1.findBlackLine(false)
 })
 ```
@@ -56,6 +59,7 @@ Ok, now we need to tell the rover what to do when it detects something in its wa
 basic.forever(function () {
     Module1_M1.moveForward(false)
     Module1_M1.findBlackLine(false)
+    // @highlight
     Module1_M1.reverseAndTurn(false)
 })
 ```
@@ -66,9 +70,11 @@ Our rover now has all the instructions it needs to explore the surface of Mars, 
 
 ```blocks
 basic.forever(function () {
-    // @highlight
+    // @hide
     let turnOn = false
-    Module1_M1.moveForward(turnOn)
+    Module1_M1.moveForward(
+        // @highlight
+        turnOn)
     Module1_M1.findBlackLine(turnOn)
     Module1_M1.reverseAndTurn(turnOn)
 })
