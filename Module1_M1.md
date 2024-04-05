@@ -17,7 +17,7 @@ Can you help Soren start the rover and begin the Mars experiments?
 
 ## Step 1
 
-In the **Workspace**, you should have an empty ``||basic:forever||`` block. If you don’t see a ``||basic:forever||`` block in your **Workspace**, you can click on the ``||basic:Basic||`` toolbox and add a ``||basic:forever||`` block that way. The ``||basic:forever||`` block tells your program how often to repeat the instructions placed inside it. In this case, those instructions will run (or loop) as long as the program is running.
+In the **Workspace** below, you should have an empty ``||basic:forever||`` block. If you don’t see a ``||basic:forever||`` block in your **Workspace**, you can click on the ``||basic:Basic||`` toolbox and add a ``||basic:forever||`` block that way. The ``||basic:forever||`` block tells your program how often to repeat the instructions placed inside it. In this case, those instructions will run (or loop) as long as the program is running.
 
 ```blocks
 basic.forever(function () {
@@ -62,7 +62,7 @@ basic.forever(function () {
 
 ## Step 5
 
-Our rover now has all the instructions it needs to explore the surface of Mars, but those movements won’t work until we tell the program to turn them on. To do this, go to the ``||RotoyVariables:Variables||`` toolbox and drag a ``||RotoyVariables:turn on||`` block into the space to the right of your ``||Module1_M1:move forward||`` block. (This will replace the ``||logic:false||`` block thats already there). Now repeat the same step for the ``||Module1_M1:find black line||`` and ``||Module1_M1:reverse and turn||``. 
+Our rover now has all the instructions it needs to explore the surface of Mars, but those movements won’t work until we tell the program to turn them on. To do this, go to the ``||RotoyVariables:Variables||`` toolbox and drag a ``||RotoyVariables:turn on||`` block into the space to the right of your ``||Module1_M1:move forward||`` block. (This will replace the ``||logic:false||`` block thats already there). Now repeat the same step for the ``||Module1_M1:find black line||`` and ``||Module1_M1:reverse and turn||`` blocks. 
 
 ```blocks
 basic.forever(function () {
@@ -103,4 +103,4 @@ input.onButtonPressed(Button.B, function () {
 
 ## Step 8
 
-Wow, you did it! You created a program that allows your robot to explore while avoiding any dangerous obstacles like rocks or, in this case, black lines. Before you test your code, you will probably want to place some dark tape or paper down on the floor for your robot to find. Now, turn on your robot, connect it to your computer, and hit the purple ``|Download|`` button in the bottom left hand corner of the MakeCode screen. Time to explore!
+Wow, you did it!. Not only will your robot move, but it will avoid any dangerous obstacles like rocks or, in this case, black lines. Before you test your code, you will probably want to place some dark tape or paper down on the floor for your robot to find. When you are ready, turn on your robot, connect it to your computer, and hit the purple ``|Download|`` button in the bottom left hand corner of the MakeCode screen. Time to explore!
