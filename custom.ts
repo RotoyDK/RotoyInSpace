@@ -3,6 +3,29 @@
 * Read more at https://makecode.microbit.org/blocks/custom
 */
 
+//% weight=100 color=#ca3142 icon="\uf00d" block="Variables"
+namespace RotoyVariables {
+    let turnOn: boolean
+    
+    //% weight=90
+    //% block="turnOn"
+    export function turnOnMethod(): boolean {
+        return turnOn
+    }
+
+    //% weight=90
+    //% block="set turnOn to true"
+    export function setTurnOnTrue() {
+        turnOn = true
+    }
+
+    //% weight=90
+    //% block="set turnOn to false"
+    export function setTurnOnFalse() {
+        turnOn = false
+    }
+}
+
 
 /**
  * Custom blocks
@@ -10,36 +33,52 @@
 //% weight=100 color=#43228e icon="\uf197" block="Mission 1"
 namespace Module1_M1 {
     export let lineCrossed = false
+    export let moveForwardVar = false
+
+    function resetAll() {
+        lineCrossed = false
+        moveForwardVar = false
+        maqueen.motorStop(maqueen.Motors.All)
+    }
 
     //% weight=90
     //% block="move forward %on"
     export function moveForward(on: boolean) {
-        if (on) {
+        if (on && !moveForwardVar) {
             maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 150)
+            moveForwardVar = true
         }
-    }
-
-    //% weight=90
-    //% block="reverse and turn %on"
-    export function reverseAndTurn(on: boolean) {
-        if (lineCrossed && on) {
-            lineCrossed = false
-            maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CCW, 100)
-            basic.pause(1000)
-            maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 100)
-            maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 100)
-            basic.pause(500)
+        if (!on) {
+            resetAll()
         }
     }
 
     //% weight=90
     //% block="find black line %on"
     export function findBlackLine(on: boolean) {
-        while (lineCrossed == false) {
-            lineCrossed = maqueen.readPatrol(maqueen.Patrol.PatrolLeft) == 1 || maqueen.readPatrol(maqueen.Patrol.PatrolLeft) == 1
-            if (!on) {
-                break;
-            }
+        if (on && moveForwardVar) {
+            lineCrossed = maqueen.readPatrol(maqueen.Patrol.PatrolLeft) == 0 || maqueen.readPatrol(maqueen.Patrol.PatrolRight) == 0
+        }
+        if (!on) {
+            resetAll()
+        }
+    }
+
+    //% weight=90
+    //% block="reverse and turn %on"
+    export function reverseAndTurn(on: boolean) {
+        if (on && lineCrossed) {
+            maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CCW, 100)
+            basic.pause(1000)
+            maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 100)
+            maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 100)
+            basic.pause(500)
+            maqueen.motorStop(maqueen.Motors.All)
+            lineCrossed = false
+            moveForwardVar = false
+        }
+        if (!on) {
+            resetAll()
         }
     }
 }
