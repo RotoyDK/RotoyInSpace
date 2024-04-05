@@ -42,7 +42,7 @@ Now that we have our two button blocks, let's make them do something. Let's clic
 
 ## Step 5
 
-Next, change one of the ``||Module1_M2:Cave lights||`` blocks in the space after the word 'to' to ``||logic:true||``. Now, do the same thing with the ``||logic:false||`` logic block in the other ``||Module1_M2:Cave lights||`` block. The ``||logic:true||`` block acts as an 'on' and the ``||logic:false||`` block acts like an 'off'. Click on the hint button if you get stuck.
+Next, change one of the ``||Module1_M2:Cave lights||`` blocks in the space after the word 'lights' to ``||logic:true||``. Now, do the same thing with the ``||logic:false||`` logic block in the other ``||Module1_M2:Cave lights||`` block. The ``||logic:true||`` block acts as an 'on' and the ``||logic:false||`` block acts like an 'off'. Click on the hint button if you get stuck.
 
 ```blocks
 Module1_M2.caveLights(true)

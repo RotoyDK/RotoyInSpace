@@ -18,8 +18,8 @@ namespace Module1_M1 {
     }
 
     //% weight=90
-    //% block="go back"
-    export function goBack() {
+    //% block="go back and turn"
+    export function goBackAndTurn() {
         if (lineCrossed) {
             maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CCW, 100)
             basic.pause(1000)
