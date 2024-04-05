@@ -4,25 +4,29 @@
 */
 
 //% weight=100 color=#ca3142 icon="\uf00d" block="Variables"
+//% groups="['Set Variables', 'Your Variables']"
 namespace RotoyVariables {
     let turnOn: boolean
-    
-    //% weight=90
-    //% block="turnOn"
-    export function turnOnMethod(): boolean {
-        return turnOn
-    }
 
     //% weight=90
     //% block="set turnOn to true"
+    //% group="Set Variables"
     export function setTurnOnTrue() {
         turnOn = true
     }
 
     //% weight=90
     //% block="set turnOn to false"
+    //% group="Set Variables"
     export function setTurnOnFalse() {
         turnOn = false
+    }
+
+    //% weight=90
+    //% block="turnOn"
+    //% group="Your Variables"
+    export function turnOnMethod(): boolean {
+        return turnOn
     }
 }
 
