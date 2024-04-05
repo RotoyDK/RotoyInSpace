@@ -1,9 +1,6 @@
 ### @hideIteration true
 
 ```template
-let turnOn: boolean = false
-turnOn = true
-turnOn = false
 basic.forever(function () {
 })
 ```
@@ -65,14 +62,13 @@ basic.forever(function () {
 
 ## Step 5
 
-Our rover now has all the instructions it needs to explore the surface of Mars, but those movements won’t work until we tell the program to turn them on. To do this, go to the ``||variables:Variables||`` toolbox and drag a ``||variables:turnOn||`` block into the space to the right of your ``||Module1_M1:move forward||`` block. (This will replace the ``||logic:false||`` block thats already there). Now repeat the same step for the ``||Module1_M1:find black line||`` and ``||Module1_M1:reverse and turn||``. 
+Our rover now has all the instructions it needs to explore the surface of Mars, but those movements won’t work until we tell the program to turn them on. To do this, go to the ``||RotoyVariables:Variables||`` toolbox and drag a ``||RotoyVariables:turn on||`` block into the space to the right of your ``||Module1_M1:move forward||`` block. (This will replace the ``||logic:false||`` block thats already there). Now repeat the same step for the ``||Module1_M1:find black line||`` and ``||Module1_M1:reverse and turn||``. 
 
 ```blocks
 basic.forever(function () {
-    let turnOn = false
-    Module1_M1.moveForward(turnOn)
-    Module1_M1.findBlackLine(turnOn)
-    Module1_M1.reverseAndTurn(turnOn)
+    Module1_M1.moveForward(RotoyVariables.turnOnMethod())
+    Module1_M1.findBlackLine(RotoyVariables.turnOnMethod())
+    Module1_M1.reverseAndTurn(RotoyVariables.turnOnMethod())
 })
 ```
 
@@ -89,16 +85,18 @@ input.onButtonPressed(Button.B, function () {
 
 ## Step 7
 
-Just one more step to go. We need to tell the rover what to do when we press buttons A and B. Drag the ``||variables:set turnOn to||`` ``||logic:true||`` block to the ``||input:button A||`` block and the set ``||variables:set turnOn to||`` ``||logic:false||`` block to the ``||input:button B||`` block. Remember that you have the hint button below if you need it. 
+Just one more step to go. We need to tell the rover what to do when we press buttons A and B. Open the Variable toolbox and drag the set turnOn to true block to the button A block and the set turnOn to false block to the button B block. Remember that you have the hint button below if you need it.
+
+Just one more step to go. We need to tell the rover what to do when we press buttons A and B. Open the ``||RotoyVariables:Variables||`` toolbox and drag the ``||RotoyVariables:set turnOn to true||`` block to the ``||input:button A||`` block and the set ``||RotoyVariables:set turnOn to false||`` block to the ``||input:button B||`` block. Remember that you have the hint button below if you need it. 
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
     // @highlight
-    turnOn = true
+    RotoyVariables.setTurnOnTrue()
 })
 input.onButtonPressed(Button.B, function () {
     // @highlight
-    turnOn = false
+    RotoyVariables.setTurnOnFalse()
 })
 ```
 
