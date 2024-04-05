@@ -55,7 +55,7 @@ Module1_M2.caveLights(false)
 
 You've done a great job so far! Now grab the ``||logic:true||`` ``||Module1_M2:Cave lights||`` block and drop it in the button ``||input:A||`` block. With that done, do the same thing with the ``||logic:false||`` ``||Module1_M2:Cave lights||`` block and drop it in the button ``||input:B||`` block. 
 
-## Step 7 @showhint
+## Step 7
 
 Wow, you did it! Let's take a moment to review what you have programmed so far. You took two ``||input:input||`` blocks and assigned them to buttons ``||input:A||`` and ``||input:B||``. You then assigned two variables called ``||Module1_M2:Cave lights||`` to those buttons, one ``||logic:true||`` and one ``||logic:false||``. Click on the hint button for the full code if you are feeling stuck.
 
