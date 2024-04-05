@@ -23,7 +23,6 @@ Can you help Soren start the rover and begin the Mars experiments?
 In the **Workspace**, you should have an empty ``||basic:forever||`` block. If you don’t see a ``||basic:forever||`` block in your **Workspace**, you can click on the ``||basic:Basic||`` toolbox and add a ``||basic:forever||`` block that way. The ``||basic:forever||`` block tells your program how often to repeat the instructions placed inside it. In this case, those instructions will run (or loop) as long as the program is running.
 
 ```blocks
-// @highlight
 basic.forever(function () {
 })
 ```
@@ -71,9 +70,7 @@ Our rover now has all the instructions it needs to explore the surface of Mars, 
 ```blocks
 basic.forever(function () {
     let turnOn = false
-    Module1_M1.moveForward(
-        // @highlight
-        turnOn)
+    Module1_M1.moveForward(turnOn)
     Module1_M1.findBlackLine(turnOn)
     Module1_M1.reverseAndTurn(turnOn)
 })
@@ -85,10 +82,8 @@ Wow, you are doing great. Our rover is ready to explore, but we still need a way
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    turnOn = true
 })
 input.onButtonPressed(Button.B, function () {
-    turnOn = false
 })
 ```
 
@@ -98,9 +93,11 @@ Just one more step to go. We need to tell the rover what to do when we press but
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
+    // @highlight
     turnOn = true
 })
 input.onButtonPressed(Button.B, function () {
+    // @highlight
     turnOn = false
 })
 ```
