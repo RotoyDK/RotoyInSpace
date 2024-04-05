@@ -23,7 +23,8 @@
         "Mission_08.md",
         "Mission_10.md",
         "tutorial-info-cache.json",
-        "Module1_M2.md"
+        "Module1_M2.md",
+        "_locales/en-GB/Module1_M2.md"
     ],
     "testFiles": [
         "test.ts"

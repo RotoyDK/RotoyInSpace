@@ -11,8 +11,6 @@ maqueen=github:dfrobot/pxt-maqueen#v1.7.2
 neopixel=github:microsoft/pxt-neopixel#v0.7.3
 ```
 
-### @hideIteration true
-
 # Mission 2
 
 ## Introduction @showdialog
