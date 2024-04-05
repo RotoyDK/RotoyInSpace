@@ -25,7 +25,8 @@
         "Module1_M1.md",
         "Module1_M2.md",
         "tutorial-info-cache.json",
-        "_locales/da/Module1_M1.md"
+        "_locales/da/Module1_M1.md",
+        "_locales/da/Module1_M2.md"
     ],
     "testFiles": [
         "test.ts"
