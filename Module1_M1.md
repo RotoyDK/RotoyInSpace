@@ -64,12 +64,10 @@ basic.forever(function () {
 
 Our rover now has all the instructions it needs to explore the surface of Mars, but those movements won’t work until we tell the program to turn them on. To do this, go to the ``||variables:Variables||`` toolbox and drag a ``||variables:turnOn||`` block into the space to the right of your ``||Module1_M1:move forward||`` block. (This will replace the ``||logic:false||`` block thats already there). Now repeat the same step for the ``||Module1_M1:find black line||`` and ``||Module1_M1:reverse and turn||``. 
 
-```blockconfig.local
-let turnOn = false
-```
-
 ```blocks
 basic.forever(function () {
+    // @highlight
+    let turnOn = false
     Module1_M1.moveForward(turnOn)
     Module1_M1.findBlackLine(turnOn)
     Module1_M1.reverseAndTurn(turnOn)
