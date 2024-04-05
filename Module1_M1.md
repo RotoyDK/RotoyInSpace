@@ -1,7 +1,7 @@
 ### @hideIteration true
 
 ```template
-let turnOn = false
+let turnOn: boolean = false
 turnOn = true
 turnOn = false
 basic.forever(function () {
