@@ -49,7 +49,7 @@ basic.forever(function () {
 
 ## Step 4
 
-Okay, nu skal vi fortælle roveren, hvad den skal gøre, når den opdager noget i vejen. For at gøre dette skal du gå til værktøjskassen ``|Module1_M1:Mission 1||`` og denne gang trække blokken ``|Module1_M1:bak og drej||`` ind i dit **Værktøjkasse** og placere den under blokken ``|Module1_M1:find sort linje||``. 
+Okay, nu skal vi fortælle roveren, hvad den skal gøre, når den opdager noget i vejen. For at gøre dette skal du gå til værktøjskassen ``||Module1_M1:Mission 1||`` og denne gang trække blokken ``||Module1_M1:bak og drej||`` ind i dit **Værktøjkasse** og placere den under blokken ``||Module1_M1:find sort linje||``. 
 
 ```blocks
 basic.forever(function () {
