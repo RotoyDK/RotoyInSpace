@@ -4,12 +4,14 @@
 */
 
 //% weight=100 color=#ca3142 icon="\uf00d" block="Variables"
+//% block.loc.da="Variabler"
 //% groups="['Set Variables', 'Your Variables']"
 namespace RotoyVariables {
     let turnOn: boolean
 
     //% weight=90
     //% block="set turnOn to true"
+    //% block.loc.da="sæt tændFor til sand"
     //% group="Set Variables"
     export function setTurnOnTrue() {
         turnOn = true
@@ -17,6 +19,7 @@ namespace RotoyVariables {
 
     //% weight=90
     //% block="set turnOn to false"
+    //% block.loc.da="sæt tændFor til falsk"
     //% group="Set Variables"
     export function setTurnOnFalse() {
         turnOn = false
@@ -24,6 +27,7 @@ namespace RotoyVariables {
 
     //% weight=90
     //% block="turnOn"
+    //% block.loc.da="tændFor"
     //% group="Your Variables"
     export function turnOnMethod(): boolean {
         return turnOn
@@ -47,6 +51,7 @@ namespace Module1_M1 {
 
     //% weight=90
     //% block="move forward %on"
+    //% block.loc.da="gå fremad %on"
     export function moveForward(on: boolean) {
         if (on && !moveForwardVar) {
             maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 150)
@@ -59,6 +64,7 @@ namespace Module1_M1 {
 
     //% weight=90
     //% block="find black line %on"
+    //% block.loc.da="find sort linje %on"
     export function findBlackLine(on: boolean) {
         if (on && moveForwardVar) {
             lineCrossed = maqueen.readPatrol(maqueen.Patrol.PatrolLeft) == 0 || maqueen.readPatrol(maqueen.Patrol.PatrolRight) == 0
@@ -70,6 +76,7 @@ namespace Module1_M1 {
 
     //% weight=90
     //% block="reverse and turn %on"
+    //% block.loc.da="bak og drej %on"
     export function reverseAndTurn(on: boolean) {
         if (on && lineCrossed) {
             maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CCW, 100)
@@ -100,6 +107,7 @@ namespace Module1_M2 {
 
     //% weight=90
     //% block="Cave lights %on"
+    //% block.loc.da="Hulelys %on"
     export function caveLights(on: boolean) {
         if (on) {
             led0.showColor(neopixel.colors(NeoPixelColors.Red))
