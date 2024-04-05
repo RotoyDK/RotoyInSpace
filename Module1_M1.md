@@ -70,7 +70,6 @@ Our rover now has all the instructions it needs to explore the surface of Mars, 
 
 ```blocks
 basic.forever(function () {
-    // @hide
     let turnOn = false
     Module1_M1.moveForward(
         // @highlight
