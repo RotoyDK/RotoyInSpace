@@ -9,26 +9,50 @@
  */
 //% weight=100 color=#43228e icon="\uf197" block="Mission 1"
 namespace Module1_M1 {
+    export let lineCrossed = false
+
+    //% weight=90
+    //% block="go straight"
+    export function goStraight() {
+        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 150)
+    }
+
+    //% weight=90
+    //% block="go back"
+    export function goBack() {
+        if (lineCrossed) {
+            maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CCW, 100)
+            basic.pause(1000)
+            maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 100)
+            maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 100)
+            basic.pause(500)
+            maqueen.motorStop(maqueen.Motors.All)
+        }
+    }
+
+    //% weight=90
+    //% block="check if black line crossed"
+    export function checkBlackLine() {
+        while (lineCrossed == false) {
+            lineCrossed = maqueen.readPatrol(maqueen.Patrol.PatrolLeft) == 1 || maqueen.readPatrol(maqueen.Patrol.PatrolLeft) == 1
+        }
+    }
+}
+
+/**
+ * Custom blocks
+ */
+//% weight=100 color=#43228e icon="\uf197" block="Mission 2"
+namespace Module1_M2 {
     export let led3: neopixel.Strip = null
     export let led2: neopixel.Strip = null
     export let led1: neopixel.Strip = null
     export let led0: neopixel.Strip = null
     export let strip: neopixel.Strip = null
-    
-    // //% weight=90
-    // //% block="start rover"
-    // export function startRover() {
-    //     maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 150)
-    // }
-    // //% weight=90
-    // //% block="stop rover"
-    // export function stopRover() {
-    //     maqueen.motorStop(maqueen.Motors.All)
-    // }
 
     //% weight=90
-    //% block="Mars experiment to %on"
-    export function marsExperiment(on: boolean) {
+    //% block="Cave lights %on"
+    export function caveLights(on: boolean) {
         if (on) {
             led0.showColor(neopixel.colors(NeoPixelColors.Red))
             basic.pause(100)
@@ -43,7 +67,7 @@ namespace Module1_M1 {
             led2.showColor(neopixel.colors(NeoPixelColors.Black))
             led3.showColor(neopixel.colors(NeoPixelColors.Black))
             basic.pause(100)
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 10; i++) {
                 led0.showColor(neopixel.colors(NeoPixelColors.Red))
                 led1.showColor(neopixel.colors(NeoPixelColors.Red))
                 led2.showColor(neopixel.colors(NeoPixelColors.Red))
