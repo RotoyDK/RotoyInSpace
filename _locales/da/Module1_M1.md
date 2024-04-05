@@ -17,7 +17,7 @@ Kan du hjælpe Soren med at starte roveren og begynde Mars-eksperimenterne?
 
 ## Step 1
 
-In the **Workspace** below, you should have an empty ``||basic:forever||`` block. If you don't see a ``||basic:forever||`` block in your **Workspace**, you can click on the ``||basic:Basic||`` toolbox and add a ``||basic:forever||`` block that way. The ``||basic:forever||`` block tells your program how often to repeat the instructions placed inside it. In this case, those instructions will run (or loop) as long as the program is running.
+I **Værktøjkasse** nedenfor bør du have en tom ``||basic:for altid||``-blok. Hvis du ikke kan se en ``||basic:for altid||``-blok i dit **Værktøjkasse**, kan du klikke på ``||basic:Grundlæggende||``-værktøjskassen og tilføje en ``||basic:for altid||``-blok på den måde. Blokken ``||basic:for altid||`` fortæller dit program, hvor ofte det skal gentage de instruktioner, der er placeret i den. I dette tilfælde vil disse instruktioner køre (eller loope), så længe programmet kører.
 
 ```blocks
 basic.forever(function () {
@@ -26,7 +26,7 @@ basic.forever(function () {
 
 ## Step 2
 
-In order for Soren to start the rover's experiments, he will need to tell the rover what to do and when to do it. Let's start by telling the rover to move forward. Go to the ``||Module1_M1:Mission 1||`` toolbox and drag a ``||Module1_M1:move forward||`` block into your **Workspace**. Now let's drop that ``||Module1_M1:move forward||`` block into the ``||basic:forever||`` block. 
+For at Søren kan starte roverens eksperimenter, bliver han nødt til at fortælle roveren, hvad den skal gøre, og hvornår den skal gøre det. Lad os starte med at fortælle roveren, at den skal bevæge sig fremad. Gå til værktøjskassen ``||Module1_M1:Mission 1||``, og træk en ``||Module1_M1:gå fremad||``-blok ind i dit **Værktøjkasse**. Lad os nu slippe ``||Module1_M1:gå fremad||``-blokken ind i ``||basic:for altid||``-blokken. 
 
 ```blocks
 basic.forever(function () {
@@ -37,7 +37,7 @@ basic.forever(function () {
 
 ## Step 3
 
-Great job! Our rover is ready to move forward, but Mars is a rocky planet. What happens if a large rock is blocking the rover's path? Well, let's add another instruction so that the rover can detect anything blocking its way. Go to the ``||Module1_M1:Mission 1||`` toolbox and this time drag the ``||Module1_M1:find black line||`` block and place it under the ``||Module1_M1:move forward||`` block. Use the hint button if you need help.
+Godt arbejde! Vores rover er klar til at komme videre, men Mars er en stenet planet. Hvad sker der, hvis en stor sten blokerer roverens vej? Lad os tilføje endnu en instruktion, så roveren kan opdage alt, der blokerer dens vej. Gå til værktøjskassen ``||Module1_M1:Mission 1||``, og træk denne gang blokken ``||Module1_M1:find sort linje||`` og placer den under blokken ``||Module1_M1:gå fremad||``. Brug hint-knappen, hvis du har brug for hjælp.
 
 ```blocks
 basic.forever(function () {
@@ -49,7 +49,7 @@ basic.forever(function () {
 
 ## Step 4
 
-Ok, now we need to tell the rover what to do when it detects something in its way. To do this, go to the ``||Module1_M1:Mission 1||`` toolbox and this time drag the ``||Module1_M1:reverse and turn||`` block into your **Workspace** and place it under the find ``||Module1_M1:find black line||`` block. 
+Okay, nu skal vi fortælle roveren, hvad den skal gøre, når den opdager noget i vejen. For at gøre dette skal du gå til værktøjskassen ``|Module1_M1:Mission 1||`` og denne gang trække blokken ``|Module1_M1:bak og drej||`` ind i dit **Værktøjkasse** og placere den under blokken ``|Module1_M1:find sort linje||``. 
 
 ```blocks
 basic.forever(function () {
@@ -62,7 +62,7 @@ basic.forever(function () {
 
 ## Step 5
 
-Our rover now has all the instructions it needs to explore the surface of Mars, but those movements won't work until we tell the program to turn them on. To do this, go to the ``||RotoyVariables:Variables||`` toolbox and drag a ``||RotoyVariables:turn on||`` block into the space to the right of your ``||Module1_M1:move forward||`` block. (This will replace the ``||logic:false||`` block thats already there). Now repeat the same step for the ``||Module1_M1:find black line||`` and ``||Module1_M1:reverse and turn||`` blocks. 
+Vores rover har nu alle de instruktioner, den skal bruge for at udforske Mars' overflade, men bevægelserne vil ikke virke, før vi beder programmet om at slå dem til. For at gøre dette skal du gå til værktøjskassen ``||RotoyVariables:Variabler||`` og trække en ``||RotoyVariables:tændFor||``-blok ind i rummet til højre for din ``||Module1_M1:gå fremad||``-blok. (Dette vil erstatte ``||logic:falsk||``-blokken, der allerede er der). Gentag nu det samme trin for blokkene ``||Module1_M1:find sort linje||`` og ``||Module1_M1:bak og drej||``. 
 
 ```blocks
 basic.forever(function () {
@@ -74,7 +74,7 @@ basic.forever(function () {
 
 ## Step 6
 
-Wow, you are doing great. Our rover is ready to explore, but we still need a way to start and stop it. We can use the A and B buttons to do that. Open the ``||input:Input||`` toolbox and drag two ``||input:on button A pressed||`` blocks to your **Workspace**. Next, use the drop down arrow next to the letter ``||input:A||`` on one of the blocks to change it to ``||input:on button B pressed||``.
+Wow, du gør det godt. Vores rover er klar til at gå på opdagelse, men vi mangler stadig en måde at starte og stoppe den på. Det kan vi bruge knapperne A og B til. Åbn værktøjskassen ``||input:Input||``, og træk to ``||input:når der trykkes på knappen A||``-blokke til dit **Værktøjkasse**. Brug derefter drop down-pilen ved siden af bogstavet ``||input:A||`` på en af blokkene til at ændre det til ``||input:når der trykkes på knappen B||``.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -85,9 +85,7 @@ input.onButtonPressed(Button.B, function () {
 
 ## Step 7
 
-Just one more step to go. We need to tell the rover what to do when we press buttons A and B. Open the Variable toolbox and drag the set turnOn to true block to the button A block and the set turnOn to false block to the button B block. Remember that you have the hint button below if you need it.
-
-Just one more step to go. We need to tell the rover what to do when we press buttons A and B. Open the ``||RotoyVariables:Variables||`` toolbox and drag the ``||RotoyVariables:set turnOn to true||`` block to the ``||input:button A||`` block and the set ``||RotoyVariables:set turnOn to false||`` block to the ``||input:button B||`` block. Remember that you have the hint button below if you need it. 
+Så mangler vi bare et skridt mere. Vi skal fortælle roveren, hvad den skal gøre, når vi trykker på knapperne A og B. Åbn værktøjskassen ``||RotoyVariables:Variabler||``, og træk blokken ``||RotoyVariables:sæt tændFor til sand||`` hen til blokken ``||input:knappen A||`` og blokken ``||RotoyVariables:sæt tændFor til falsk||`` hen til blokken ``||input:knappen B||``. Husk, at du har hint-knappen nedenfor, hvis du får brug for den. 
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -103,4 +101,4 @@ input.onButtonPressed(Button.B, function () {
 
 ## Step 8
 
-Wow, you did it!. Not only will your robot move, but it will avoid any dangerous obstacles like rocks or, in this case, black lines. Before you test your code, you will probably want to place some dark tape or paper down on the floor for your robot to find. When you are ready, turn on your robot, connect it to your computer, and hit the purple ``|Download|`` button in the bottom left hand corner of the MakeCode screen. Time to explore!
+Wow, du gjorde det! Ikke alene vil din robot bevæge sig, men den vil også undgå farlige forhindringer som sten eller, i dette tilfælde, sorte streger. Før du tester din kode, skal du nok lægge noget mørkt tape eller papir ned på gulvet, som din robot kan finde. Når du er klar, tænder du din robot, forbinder den til din computer og trykker på den lilla knap ``|Hent|`` i nederste venstre hjørne af MakeCode-skærmen. Tid til at gå på opdagelse!
