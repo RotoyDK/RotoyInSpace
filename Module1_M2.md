@@ -1,3 +1,5 @@
+### @hideIteration true
+
 ```customts
 Module1_M2.strip = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
 Module1_M2.led0 = Module1_M2.strip.range(0, 1)
@@ -10,8 +12,6 @@ Module1_M2.led3 = Module1_M2.strip.range(3, 1)
 maqueen=github:dfrobot/pxt-maqueen#v1.7.2
 neopixel=github:microsoft/pxt-neopixel#v0.7.3
 ```
-
-### @hideIteration true
 
 # Mission 2
 
