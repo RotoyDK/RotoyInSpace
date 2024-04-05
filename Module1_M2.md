@@ -11,7 +11,7 @@ maqueen=github:dfrobot/pxt-maqueen#v1.7.2
 neopixel=github:microsoft/pxt-neopixel#v0.7.3
 ```
 
-# Mission 1
+# Mission 2
 
 ## Introduction @showdialog
 
@@ -38,7 +38,7 @@ You should now have ``||input:two input button||`` blocks in your **Workspace**,
 
 ## Step 4
 
-Now that we have our two button blocks, let's make them do something. Let's click on the ``||Module1_M2:Mission 1||`` toolbox and drag two of the ``||Module1_M2:Cave lights||`` blocks into our **Workspace**. This block will simulate your robot conducting experiments on Mars. 
+Now that we have our two button blocks, let's make them do something. Let's click on the ``||Module1_M2:Mission 2||`` toolbox and drag two of the ``||Module1_M2:Cave lights||`` blocks into our **Workspace**. This block will simulate your robot conducting experiments on Mars. 
 
 ## Step 5
 
