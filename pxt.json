@@ -22,8 +22,8 @@
         "Mission_07.md",
         "Mission_08.md",
         "Mission_10.md",
-        "Module1_M2.md",
-        "tutorial-info-cache.json"
+        "tutorial-info-cache.json",
+        "Module1_M2.md"
     ],
     "testFiles": [
         "test.ts"
@@ -35,5 +35,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }

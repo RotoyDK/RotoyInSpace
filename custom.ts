@@ -12,29 +12,34 @@ namespace Module1_M1 {
     export let lineCrossed = false
 
     //% weight=90
-    //% block="go straight"
-    export function goStraight() {
-        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 150)
+    //% block="move forward %on"
+    export function moveForward(on: boolean) {
+        if (on) {
+            maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 150)
+        }
     }
 
     //% weight=90
-    //% block="go back and turn"
-    export function goBackAndTurn() {
-        if (lineCrossed) {
+    //% block="reverse and turn %on"
+    export function reverseAndTurn(on: boolean) {
+        if (lineCrossed && on) {
+            lineCrossed = false
             maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CCW, 100)
             basic.pause(1000)
             maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 100)
             maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 100)
             basic.pause(500)
-            maqueen.motorStop(maqueen.Motors.All)
         }
     }
 
     //% weight=90
-    //% block="check if black line crossed"
-    export function checkBlackLine() {
+    //% block="find black line %on"
+    export function findBlackLine(on: boolean) {
         while (lineCrossed == false) {
             lineCrossed = maqueen.readPatrol(maqueen.Patrol.PatrolLeft) == 1 || maqueen.readPatrol(maqueen.Patrol.PatrolLeft) == 1
+            if (!on) {
+                break;
+            }
         }
     }
 }
