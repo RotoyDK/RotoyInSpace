@@ -1,6 +1,9 @@
 ```template
 let turnOn = false
 turnOn = true
+turnOn = false
+basic.forever(function () {
+})
 ```
 
 ```package
