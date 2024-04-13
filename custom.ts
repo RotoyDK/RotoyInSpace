@@ -151,8 +151,6 @@ namespace Module1_M2 {
 //% weight=100 color=#43228e icon="\uf197" block="Mission 5"
 namespace Module1_M5 {
 
-    //% weight=90
-    //% block="adfsl"
     export enum RockPaperScissors {
         Rock = 1,
         Paper = 2,

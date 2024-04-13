@@ -1,5 +1,9 @@
 ### @hideIteration true
 
+```customts
+let hand: Module1_M5.RockPaperScissors = null
+```
+
 # Mission 5
 
 ## Introduction @showdialog
@@ -31,7 +35,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Step 3
 
-You are doing really well! Let’s take a minute to look at that last block you made in more detail. First, you added a ``||variable:variable||`` which acts like a storage box. Then, you added a ``||Module1_M5:function||`` that picks random hand.
+You are doing really well! Let's take a minute to look at that last block you made in more detail. First, you added a ``||variable:variable||`` which acts like a storage box. Then, you added a ``||Module1_M5:function||`` that picks random hand.
 
 ## Step 4
 
@@ -103,7 +107,7 @@ if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
 
 ## Step 7
 
-Are you ready to get creative? Great, because it's time to digitally draw our game pieces. Go to the first ``||basic:show leds||`` block and click on the small squares to ‘draw’ your *paper* game piece. When you're done, go to the next ``||basic:show leds||`` block (under ``||logic:else if||``) and this time ‘draw’ your *rock* game piece. Finally, in the last ``||basic:show leds||`` block (``||logic:else||``) click on the small square to ‘draw’ your *scissors* game piece. We encourage you to be as creative as you like, but we’ve placed some samples in the hint if you need them. 
+Are you ready to get creative? Great, because it's time to digitally draw our game pieces. Go to the first ``||basic:show leds||`` block and click on the small squares to 'draw' your *paper* game piece. When you're done, go to the next ``||basic:show leds||`` block (under ``||logic:else if||``) and this time 'draw' your *rock* game piece. Finally, in the last ``||basic:show leds||`` block (``||logic:else||``) click on the small square to 'draw' your *scissors* game piece. We encourage you to be as creative as you like, but we've placed some samples in the hint if you need them. 
 
 ```blocks
 let hand: Module1_M5.RockPaperScissors = null
@@ -139,7 +143,7 @@ if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
 
 ## Step 8
 
-Before we move on, let's take a closer look at our program so far. First, we have ``||input:on shake||`` block which starts our program. Next, we randomly pick a hand between rock, paper and scissors, which is stored in a ``||variable:variable||`` called ``||variable:hand||``. The ``||logic:conditional statement||`` will then look at the stored hand and show the ``||basic:led||`` game piece that matches it on your robot’s screen. Incredible! You have used inputs, variables, conditional statements and a bit of logic to build your own computer game.
+Before we move on, let's take a closer look at our program so far. First, we have ``||input:on shake||`` block which starts our program. Next, we randomly pick a hand between rock, paper and scissors, which is stored in a ``||variable:variable||`` called ``||variable:hand||``. The ``||logic:conditional statement||`` will then look at the stored hand and show the ``||basic:led||`` game piece that matches it on your robot's screen. Incredible! You have used inputs, variables, conditional statements and a bit of logic to build your own computer game.
 
 ```blocks
 let hand: Module1_M5.RockPaperScissors = null
@@ -185,4 +189,4 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Step 8
 
-It's time to challenge the computer. Win 2 out of 3 games of rock, paper, and scissors to complete the mission and continue Lise and Soren’s Jupiter Challenge. You can shake your robot gently after each game to reset it. Good luck!
+It's time to challenge the computer. Win 2 out of 3 games of rock, paper, and scissors to complete the mission and continue Lise and Soren's Jupiter Challenge. You can shake your robot gently after each game to reset it. Good luck!
