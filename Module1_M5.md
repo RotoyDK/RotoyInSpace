@@ -1,7 +1,7 @@
 ### @hideIteration true
 
 ```customts
-let hand: Module1_M5.RockPaperScissors = null
+let hand: Module1_M5.RockPaperScissors
 ```
 
 # Mission 5
