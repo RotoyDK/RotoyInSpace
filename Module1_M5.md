@@ -42,7 +42,7 @@ let hand: Module1_M5.RockPaperScissors = null
 input.onGesture(Gesture.Shake, function () {
     hand = Module1_M5.setRandomHand()
     // @highlight
-    if () {
+    if (true) {
     	
     } else if (false) {
     	
@@ -58,7 +58,7 @@ Now its time to add our three game pieces. Open the ``||logic:Logic||`` toolbox,
 
 ```block
 // @hide
-let hand = Module1_M5.RockPaperScissors.Rock
+let hand = 0
 // @highlight
 if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
 } else if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Paper)) {
