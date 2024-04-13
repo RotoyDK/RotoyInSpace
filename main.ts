@@ -1,7 +1,7 @@
-let hand: Module1_M5.RockPaperScissors = null
+let hand: RockPaperScissors = null
 input.onGesture(Gesture.Shake, function () {
     hand = Module1_M5.setRandomHand()
-    if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
+    if (hand == Module1_M5.getHand(RockPaperScissors.Rock)) {
         basic.showLeds(`
             # # # # #
             # . . . #
@@ -10,7 +10,7 @@ input.onGesture(Gesture.Shake, function () {
             # # # # #
             `)
         music.playSoundEffect(music.createSoundEffect(WaveShape.Noise, 54, 54, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
-    } else if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Paper)) {
+    } else if (hand == Module1_M5.getHand(RockPaperScissors.Paper)) {
         basic.showLeds(`
             . . . . .
             . # # # #

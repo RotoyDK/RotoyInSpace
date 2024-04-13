@@ -58,7 +58,7 @@ Now its time to add our three game pieces. Open the ``||logic:Logic||`` toolbox,
 
 ```blocks
 // @hide
-let hand = Module1_M5.RockPaperScissors.Rock;
+let hand = RockPaperScissors.Rock;
 // @highlight
 if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
 } else if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Paper)) {

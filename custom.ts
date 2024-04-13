@@ -145,17 +145,17 @@ namespace Module1_M2 {
     }
 }
 
+enum RockPaperScissors {
+    Rock = 1,
+    Paper = 2,
+    Scissors = 3
+}
+
 /**
  * Custom blocks
  */
 //% weight=100 color=#43228e icon="\uf197" block="Mission 5"
 namespace Module1_M5 {
-
-    export enum RockPaperScissors {
-        Rock = 1,
-        Paper = 2,
-        Scissors = 3
-    }
 
     //% weight=90
     //% block="%hand"
