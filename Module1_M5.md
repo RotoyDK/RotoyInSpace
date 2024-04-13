@@ -38,7 +38,7 @@ You are doing really well! Let's take a minute to look at that last block you ma
 Ok, now we have to tell the program what to do when it selects rock, paper or scissors. To do this, we are going to use a conditional statement. Click on the ``||logic:Logic||`` toolbox and place a ``||logic:if true then else||`` block right under the ``||Module1_M5:set hand to random rock, paper or scissors||`` block you added earlier, and click plus button under ``||logic:else||``. Did you notice that there are 3 places to insert blocks in your conditional statement? What do you think we might place in each of those places?
 
 ```blocks
-export let hand: Module1_M5.RockPaperScissors = null
+let hand: Module1_M5.RockPaperScissors = null
 input.onGesture(Gesture.Shake, function () {
     hand = Module1_M5.setRandomHand()
     // @highlight
@@ -57,7 +57,7 @@ input.onGesture(Gesture.Shake, function () {
 Now its time to add our three game pieces. Open the ``||logic:Logic||`` toolbox, drag ``||logic:0 = 0||`` block and place it next to ``||logic:if||`` in conditational statement. Then replace the 1st 0 with ``||variable:hand||`` variable from ``||variable:Variables||`` toolbox. Replace 2nd 0 with ``||Module1_M5:Rock||``. Repeat this process for ``||logic:else if||`` part, and use ``||Module1_M5:Paper||`` instead.
 
 ```block
-let hand = 0
+export let hand = 0
 if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
 } else if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Paper)) {
 } else {
