@@ -22,7 +22,7 @@ input.onGesture(Gesture.Shake, function () {
 Now, let's open the ``||Module1_M5:Mission 5||`` toolbox, grab the ``||Module1_M5:set hand to random rock, paper or scissors||`` block and drag it into the ``||input:on shake||`` block already in your **Workspace**.
 
 ```blocks
-let hand: Module1_M5.RockPaperScissors
+let hand: Module1_M5.RockPaperScissors = null
 input.onGesture(Gesture.Shake, function () {
     // @highlight
     hand = Module1_M5.setRandomHand()
