@@ -17,7 +17,7 @@ Kan du hjælpe Soren med at starte roveren og begynde Mars-eksperimenterne?
 
 ## Step 1
 
-I **Værktøjkasse** nedenfor bør du have en tom ``||basic:for altid||``-blok. Hvis du ikke kan se en ``||basic:for altid||``-blok i dit **Værktøjkasse**, kan du klikke på ``||basic:Grundlæggende||``-værktøjskassen og tilføje en ``||basic:for altid||``-blok på den måde. Blokken ``||basic:for altid||`` fortæller dit program, hvor ofte det skal gentage de instruktioner, der er placeret i den. I dette tilfælde vil disse instruktioner køre (eller loope), så længe programmet kører.
+I **Værktøjkasse** nedenfor bør du have en tom ``||basic:for altid||``-blok. Hvis du ikke kan se en ``||basic:for altid||``-blok i din **Værktøjkasse**, kan du klikke på ``||basic:Grundlæggende||``-værktøjskassen og tilføje en ``||basic:for altid||``-blok på den måde. Blokken ``||basic:for altid||`` fortæller dit program, hvor ofte det skal gentage de instruktioner, der er placeret i den. I dette tilfælde vil disse instruktioner køre (eller loope), så længe programmet kører.
 
 ```blocks
 basic.forever(function () {
@@ -26,7 +26,7 @@ basic.forever(function () {
 
 ## Step 2
 
-For at Søren kan starte roverens eksperimenter, bliver han nødt til at fortælle roveren, hvad den skal gøre, og hvornår den skal gøre det. Lad os starte med at fortælle roveren, at den skal bevæge sig fremad. Gå til værktøjskassen ``||Module1_M1:Mission 1||``, og træk en ``||Module1_M1:gå fremad||``-blok ind i dit **Værktøjkasse**. Lad os nu slippe ``||Module1_M1:gå fremad||``-blokken ind i ``||basic:for altid||``-blokken. 
+For at Søren kan starte roverens eksperimenter, bliver han nødt til at fortælle roveren, hvad den skal gøre, og hvornår den skal gøre det. Lad os starte med at fortælle roveren, at den skal bevæge sig fremad. Gå til værktøjskassen ``||Module1_M1:Mission 1||``, og træk en ``||Module1_M1:gå fremad||``-blok ind i din **Værktøjkasse**. Nu kan du putte ``||Module1_M1:gå fremad||``-blokken ind i ``||basic:for altid||``-blokken. 
 
 ```blocks
 basic.forever(function () {
@@ -37,7 +37,7 @@ basic.forever(function () {
 
 ## Step 3
 
-Godt arbejde! Vores rover er klar til at komme videre, men Mars er en stenet planet. Hvad sker der, hvis en stor sten blokerer roverens vej? Lad os tilføje endnu en instruktion, så roveren kan opdage alt, der blokerer dens vej. Gå til værktøjskassen ``||Module1_M1:Mission 1||``, og træk denne gang blokken ``||Module1_M1:find sort linje||`` og placer den under blokken ``||Module1_M1:gå fremad||``. Brug hint-knappen, hvis du har brug for hjælp.
+Godt arbejde! Vores rover er klar til at komme videre, men Mars er en planet med mange sten. Hvad sker der, hvis en stor sten blokerer roverens vej? Lad os tilføje endnu en instruktion, så roveren kan opdage alt, der blokerer dens vej. Gå til værktøjskassen ``||Module1_M1:Mission 1||``, og træk denne gang blokken ``||Module1_M1:find sort linje||`` og placer den under blokken ``||Module1_M1:gå fremad||``. Brug hint-knappen, hvis du har brug for hjælp.
 
 ```blocks
 basic.forever(function () {
@@ -49,7 +49,7 @@ basic.forever(function () {
 
 ## Step 4
 
-Okay, nu skal vi fortælle roveren, hvad den skal gøre, når den opdager noget i vejen. For at gøre dette skal du gå til værktøjskassen ``||Module1_M1:Mission 1||`` og denne gang trække blokken ``||Module1_M1:bak og drej||`` ind i dit **Værktøjkasse** og placere den under blokken ``||Module1_M1:find sort linje||``. 
+Okay, nu skal vi fortælle roveren, hvad den skal gøre, når den opdager noget i vejen. For at gøre dette skal du gå til værktøjskassen ``||Module1_M1:Mission 1||`` og denne gang trække blokken ``||Module1_M1:bak og drej||`` ind i din **Værktøjkasse** og placere den under blokken ``||Module1_M1:find sort linje||``. 
 
 ```blocks
 basic.forever(function () {
@@ -74,7 +74,7 @@ basic.forever(function () {
 
 ## Step 6
 
-Wow, du gør det godt. Vores rover er klar til at gå på opdagelse, men vi mangler stadig en måde at starte og stoppe den på. Det kan vi bruge knapperne A og B til. Åbn værktøjskassen ``||input:Input||``, og træk to ``||input:når der trykkes på knappen A||``-blokke til dit **Værktøjkasse**. Brug derefter drop down-pilen ved siden af bogstavet ``||input:A||`` på en af blokkene til at ændre det til ``||input:når der trykkes på knappen B||``.
+Wow, du gør det godt. Vores rover er klar til at gå på opdagelse, men vi mangler stadig en måde at starte og stoppe den på. Det kan vi bruge knapperne A og B til. Åbn værktøjskassen ``||input:Input||``, og træk to ``||input:når der trykkes på knappen A||``-blokke til din **Værktøjkasse**. Brug derefter drop down-pilen ved siden af bogstavet ``||input:A||`` på en af blokkene til at ændre det til ``||input:når der trykkes på knappen B||``.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {

@@ -36,7 +36,7 @@ input.onButtonPressed(Button.B, function () {
 
 ## Step 3
 
-Du skulle nu have ``||input:to input||``-knapblokke i dit **Værktøjkasse**, en til ``||input:A||`` og en til ``||input:B||``. Du har måske bemærket, at pladsen inde i knapblokkene ligner en puslespilsbrik. Dette rum giver dig mulighed for at tilføje eller fjerne blokke for at bygge dit program! Alt, hvad du tilføjer til knapblokken, kører kun, når du trykker på den pågældende knap. 
+Du skulle nu have ``||input:to input||``-knapblokke i din **Værktøjkasse**, en til ``||input:A||`` og en til ``||input:B||``. Du har måske bemærket, at pladsen inde i knapblokkene ligner en puslespilsbrik. Dette rum giver dig mulighed for at tilføje eller fjerne blokke for at bygge dit program! Alt, hvad du tilføjer til knapblokken, kører kun, når du trykker på den pågældende knap. 
 
 ## Step 4
 
