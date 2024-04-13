@@ -58,7 +58,10 @@ Now its time to add our three game pieces. Open the ``||logic:Logic||`` toolbox,
 
 ```block
 export let hand: Module1_M5.RockPaperScissors = null
-if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
+if (
+// @highlight
+hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock
+)) {
 } else if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Paper)) {
 } else {
 }
@@ -102,7 +105,7 @@ if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
 
 ## Step 7
 
-Are you ready to get creative? Great, because it's time to digitally draw our game pieces. Go to the first ``||basic:show leds||`` block and click on the small squares to 'draw' your *paper* game piece. When you're done, go to the next ``||basic:show leds||`` block (under ``||logic:else if||``) and this time 'draw' your *rock* game piece. Finally, in the last ``||basic:show leds||`` block (``||logic:else||``) click on the small square to 'draw' your *scissors* game piece. We encourage you to be as creative as you like, but we've placed some samples in the hint if you need them. 
+Are you ready to get creative? Great, because it's time to digitally draw our game pieces. Go to the first ``||basic:show leds||`` block and click on the small squares to 'draw' your **paper** game piece. When you're done, go to the next ``||basic:show leds||`` block (under ``||logic:else if||``) and this time 'draw' your **rock** game piece. Finally, in the last ``||basic:show leds||`` block (``||logic:else||``) click on the small square to 'draw' your **scissors** game piece. We encourage you to be as creative as you like, but we've placed some samples in the hint if you need them. 
 
 ```block
 export let hand: Module1_M5.RockPaperScissors = null
