@@ -54,7 +54,7 @@ namespace Module1_M1 {
     //% block.loc.da="gå fremad %on"
     export function moveForward(on: boolean) {
         if (on && !moveForwardVar) {
-            maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 150)
+            maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 100)
             moveForwardVar = true
         }
         if (!on) {
@@ -79,10 +79,10 @@ namespace Module1_M1 {
     //% block.loc.da="bak og drej %on"
     export function reverseAndTurn(on: boolean) {
         if (on && lineCrossed) {
-            maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CCW, 100)
+            maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CCW, 60)
             basic.pause(1000)
-            maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 100)
-            maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 100)
+            maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 60)
+            maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 60)
             basic.pause(500)
             maqueen.motorStop(maqueen.Motors.All)
             lineCrossed = false
@@ -142,6 +142,29 @@ namespace Module1_M2 {
             maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOff)
             maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOff)
         }
+    }
+}
+
+/**
+ * Custom blocks
+ */
+//% weight=100 color=#43228e icon="\uf197" block="Mission 5"
+namespace Module1_M5 {
+
+    //% weight=90
+    //% block="Cave lights %on"
+    //% blockSetVariable=strip
+    export function create(on: DigitalPin): boolean {
+        let strip = true;
+        return strip;
+    }
+
+    //% weight=90
+    //% block="NeoPixel at pin %icon|with %icon2|leds as %icon3"
+    //% inlineInputMode = external
+    export function ifa(icon: string, icon2: IconNames, icon3: IconNames): boolean {
+        let strip = true;
+        return strip;
     }
 }
 
