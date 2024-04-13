@@ -38,7 +38,7 @@ You are doing really well! Let's take a minute to look at that last block you ma
 Ok, now we have to tell the program what to do when it selects rock, paper or scissors. To do this, we are going to use a conditional statement. Click on the ``||logic:Logic||`` toolbox and place a ``||logic:if true then else||`` block right under the ``||Module1_M5:set hand to random rock, paper or scissors||`` block you added earlier, and click plus button under ``||logic:else||``. Did you notice that there are 3 places to insert blocks in your conditional statement? What do you think we might place in each of those places?
 
 ```blocks
-let hand: Module1_M5.RockPaperScissors = null
+export let hand: Module1_M5.RockPaperScissors = null
 input.onGesture(Gesture.Shake, function () {
     hand = Module1_M5.setRandomHand()
     // @highlight
