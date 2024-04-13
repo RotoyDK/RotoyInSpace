@@ -58,10 +58,7 @@ Now its time to add our three game pieces. Open the ``||logic:Logic||`` toolbox,
 
 ```block
 export let hand: Module1_M5.RockPaperScissors = null
-if (
-// @highlight
-hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock
-)) {
+if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
 } else if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Paper)) {
 } else {
 }
