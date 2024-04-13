@@ -56,7 +56,7 @@ input.onGesture(Gesture.Shake, function () {
 
 Now its time to add our three game pieces. Open the ``||logic:Logic||`` toolbox, drag ``||logic:0 = 0||`` block and place it next to ``||logic:if||`` in conditational statement. Then replace the 1st 0 with ``||variable:hand||`` variable from ``||variable:Variables||`` toolbox. Replace 2nd 0 with ``||Module1_M5:Rock||``. Repeat this process for ``||logic:else if||`` part, and use ``||Module1_M5:Paper||`` instead.
 
-```blocks
+```block
 // @hide
 let hand = RockPaperScissors.Rock;
 // @highlight
