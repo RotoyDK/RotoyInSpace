@@ -58,7 +58,6 @@ Now its time to add our three game pieces. Open the ``||logic:Logic||`` toolbox,
 
 ```blocks
 let hand: Module1_M5.RockPaperScissors = null
-// @hide
 hand = Module1_M5.setRandomHand()
 // @highlight
 if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
