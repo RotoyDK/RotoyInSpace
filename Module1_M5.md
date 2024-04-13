@@ -58,6 +58,8 @@ Now its time to add our three game pieces. Open the ``||logic:Logic||`` toolbox,
 
 ```blocks
 let hand: Module1_M5.RockPaperScissors = null
+// @hide
+hand = Module1_M5.setRandomHand()
 // @highlight
 if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
 } else if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Paper)) {
@@ -71,6 +73,8 @@ Open the ``||basic:Basic||`` toolbox and drag a ``||basic:show leds||`` block un
 
 ```blocks
 let hand: Module1_M5.RockPaperScissors = null
+// @hide
+hand = Module1_M5.setRandomHand()
 if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
     // @highlight
     basic.showLeds(`
@@ -107,6 +111,8 @@ Are you ready to get creative? Great, because it's time to digitally draw our ga
 
 ```blocks
 let hand: Module1_M5.RockPaperScissors = null
+// @hide
+hand = Module1_M5.setRandomHand()
 if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
     // @highlight
     basic.showLeds(`
