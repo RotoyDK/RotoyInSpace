@@ -42,7 +42,7 @@ let hand: Module1_M5.RockPaperScissors = null
 input.onGesture(Gesture.Shake, function () {
     hand = Module1_M5.setRandomHand()
     // @highlight
-    if (true) {
+    if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
     	
     } else if (false) {
     	
