@@ -152,19 +152,25 @@ namespace Module1_M2 {
 namespace Module1_M5 {
 
     //% weight=90
-    //% block="Cave lights %on"
-    //% blockSetVariable=strip
-    export function create(on: DigitalPin): boolean {
-        let strip = true;
-        return strip;
+    //% block="adfsl"
+    export enum RockPaperScissors {
+        Rock = 1,
+        Paper = 2,
+        Scissors = 3
     }
 
     //% weight=90
-    //% block="NeoPixel at pin %icon|with %icon2|leds as %icon3"
-    //% inlineInputMode = external
-    export function ifa(icon: string, icon2: IconNames, icon3: IconNames): boolean {
-        let strip = true;
-        return strip;
+    //% block="%hand"
+    export function getHand(hand: RockPaperScissors): RockPaperScissors {
+        return hand;
+    }
+
+    //% weight=90
+    //% block="random rock, paper or scissors"
+    //% blockSetVariable=hand
+    export function setRandomHand(): RockPaperScissors {
+        let hand: RockPaperScissors = randint(1, 3)
+        return hand;
     }
 }
 

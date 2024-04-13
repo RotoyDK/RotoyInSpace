@@ -1,12 +1,32 @@
-input.onButtonPressed(Button.A, function () {
-    RotoyVariables.setTurnOnTrue()
-})
-input.onButtonPressed(Button.B, function () {
-    RotoyVariables.setTurnOnFalse()
-})
-let strip = false
-basic.forever(function () {
-    Module1_M1.moveForward(RotoyVariables.turnOnMethod())
-    Module1_M1.findBlackLine(RotoyVariables.turnOnMethod())
-    Module1_M1.reverseAndTurn(RotoyVariables.turnOnMethod())
+let hand: Module1_M5.RockPaperScissors = null
+input.onGesture(Gesture.Shake, function () {
+    hand = Module1_M5.setRandomHand()
+    if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
+        basic.showLeds(`
+            # # # # #
+            # . . . #
+            # . . . #
+            # . . . #
+            # # # # #
+            `)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Noise, 54, 54, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Paper)) {
+        basic.showLeds(`
+            . . . . .
+            . # # # #
+            # # # # #
+            # # # # .
+            . # # # .
+            `)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Sine, 500, 500, 255, 0, 500, SoundExpressionEffect.Vibrato, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else {
+        basic.showLeds(`
+            # # . . #
+            # # . # .
+            . . # . .
+            # # . # .
+            # # . . #
+            `)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Square, 1600, 1, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Curve), SoundExpressionPlayMode.UntilDone)
+    }
 })
