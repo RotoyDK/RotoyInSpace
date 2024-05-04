@@ -3,6 +3,7 @@
 ```template
 basic.forever(function () {
 })
+//
 ```
 
 ```package
@@ -17,7 +18,7 @@ Can you help Soren start the rover and begin the Mars experiments?
 
 ## Step 1
 
-In the **Workspace** below, you should have an empty ``||basic:forever||`` block. If you don’t see a ``||basic:forever||`` block in your **Workspace**, you can click on the ``||basic:Basic||`` toolbox and add a ``||basic:forever||`` block that way. The ``||basic:forever||`` block tells your program how often to repeat the instructions placed inside it. In this case, those instructions will run (or loop) as long as the program is running.
+In the **Workspace** below, you should have an empty ``||basic:forever||`` block. If you don't see a ``||basic:forever||`` block in your **Workspace**, you can click on the ``||basic:Basic||`` toolbox and add a ``||basic:forever||`` block that way. The ``||basic:forever||`` block tells your program how often to repeat the instructions placed inside it. In this case, those instructions will run (or loop) as long as the program is running.
 
 ```blocks
 basic.forever(function () {
@@ -26,7 +27,7 @@ basic.forever(function () {
 
 ## Step 2
 
-In order for Soren to start the rover’s experiments, he will need to tell the rover what to do and when to do it. Let’s start by telling the rover to move forward. Go to the ``||Module1_M1:Mission 1||`` toolbox and drag a ``||Module1_M1:move forward||`` block into your **Workspace**. Now let’s drop that ``||Module1_M1:move forward||`` block into the ``||basic:forever||`` block. 
+In order for Soren to start the rover's experiments, he will need to tell the rover what to do and when to do it. Let's start by telling the rover to move forward. Go to the ``||Module1_M1:Mission 1||`` toolbox and drag a ``||Module1_M1:move forward||`` block into your **Workspace**. Now let's drop that ``||Module1_M1:move forward||`` block into the ``||basic:forever||`` block. 
 
 ```blocks
 basic.forever(function () {
@@ -37,7 +38,7 @@ basic.forever(function () {
 
 ## Step 3
 
-Great job! Our rover is ready to move forward, but Mars is a rocky planet. What happens if a large rock is blocking the rover’s path? Well, let’s add another instruction so that the rover can detect anything blocking its way. Go to the ``||Module1_M1:Mission 1||`` toolbox and this time drag the ``||Module1_M1:find black line||`` block and place it under the ``||Module1_M1:move forward||`` block. Use the hint button if you need help.
+Great job! Our rover is ready to move forward, but Mars is a rocky planet. What happens if a large rock is blocking the rover's path? Well, let's add another instruction so that the rover can detect anything blocking its way. Go to the ``||Module1_M1:Mission 1||`` toolbox and this time drag the ``||Module1_M1:find black line||`` block and place it under the ``||Module1_M1:move forward||`` block. Use the hint button if you need help.
 
 ```blocks
 basic.forever(function () {
@@ -62,7 +63,7 @@ basic.forever(function () {
 
 ## Step 5
 
-Our rover now has all the instructions it needs to explore the surface of Mars, but those movements won’t work until we tell the program to turn them on. To do this, go to the ``||RotoyVariables:Variables||`` toolbox and drag a ``||RotoyVariables:turnOn||`` block into the space to the right of your ``||Module1_M1:move forward||`` block. (This will replace the ``||logic:false||`` block thats already there). Now repeat the same step for the ``||Module1_M1:find black line||`` and ``||Module1_M1:reverse and turn||`` blocks. 
+Our rover now has all the instructions it needs to explore the surface of Mars, but those movements won't work until we tell the program to turn them on. To do this, go to the ``||RotoyVariables:Variables||`` toolbox and drag a ``||RotoyVariables:turnOn||`` block into the space to the right of your ``||Module1_M1:move forward||`` block. (This will replace the ``||logic:false||`` block thats already there). Now repeat the same step for the ``||Module1_M1:find black line||`` and ``||Module1_M1:reverse and turn||`` blocks. 
 
 ```blocks
 basic.forever(function () {
