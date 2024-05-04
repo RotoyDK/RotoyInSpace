@@ -148,26 +148,38 @@ namespace Module1_M2 {
 /**
  * Custom blocks
  */
-//% weight=100 color=#43228e icon="\uf197" block="Mission 5"
-namespace Module1_M5 {
+//% weight=100 color=#43228e icon="\uf197" block="Mission 1"
+namespace Module3_M1 {
 
-    export enum RockPaperScissors {
-        Rock = 1,
-        Paper = 2,
-        Scissors = 3
+    // export enum RockPaperScissors {
+    //     Rock = 1,
+    //     Paper = 2,
+    //     Scissors = 3
+    // }
+
+    //% weight=90
+    //% block="Rock"
+    export function getRock(): number {
+        return 1;
     }
 
     //% weight=90
-    //% block="%hand"
-    export function getHand(hand: RockPaperScissors): RockPaperScissors {
-        return hand;
+    //% block="Paper"
+    export function getPaper(): number {
+        return 2;
+    }
+
+    //% weight=90
+    //% block="Scissors"
+    export function getScissors(): number {
+        return 3;
     }
 
     //% weight=90
     //% block="random rock, paper or scissors"
     //% blockSetVariable=hand
-    export function setRandomHand(): RockPaperScissors {
-        let hand: RockPaperScissors = randint(1, 3)
+    export function setRandomHand(): number {
+        let hand: number = randint(1, 3)
         return hand;
     }
 }

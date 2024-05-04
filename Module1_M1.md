@@ -1,3 +1,5 @@
+### @hideIteration true
+
 ```template
 basic.forever(function () {
 })

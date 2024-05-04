@@ -1,32 +1,29 @@
-let hand: Module1_M5.RockPaperScissors = null
+let hand = 0
 input.onGesture(Gesture.Shake, function () {
-    hand = Module1_M5.setRandomHand()
-    if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Rock)) {
-        basic.showLeds(`
-            # # # # #
-            # . . . #
-            # . . . #
-            # . . . #
-            # # # # #
-            `)
-        music.playSoundEffect(music.createSoundEffect(WaveShape.Noise, 54, 54, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
-    } else if (hand == Module1_M5.getHand(Module1_M5.RockPaperScissors.Paper)) {
+    hand = Module3_M1.setRandomHand()
+    if (hand == Module3_M1.getRock()) {
         basic.showLeds(`
             . . . . .
-            . # # # #
-            # # # # #
-            # # # # .
-            . # # # .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
             `)
-        music.playSoundEffect(music.createSoundEffect(WaveShape.Sine, 500, 500, 255, 0, 500, SoundExpressionEffect.Vibrato, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (hand == Module3_M1.getPaper()) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
     } else {
         basic.showLeds(`
-            # # . . #
-            # # . # .
-            . . # . .
-            # # . # .
-            # # . . #
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
             `)
-        music.playSoundEffect(music.createSoundEffect(WaveShape.Square, 1600, 1, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Curve), SoundExpressionPlayMode.UntilDone)
     }
 })
