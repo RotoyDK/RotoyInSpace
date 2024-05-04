@@ -1,5 +1,10 @@
 ### @hideIteration true
 
+```template
+basic.forever(function () {
+})
+```
+
 # Mission 5
 
 ## Introduction @showdialog
@@ -70,7 +75,7 @@ input.onGesture(Gesture.Shake, function () {
 Now its time to add the three game pieces to your conditional statement. Open the ``||logic:Logic||`` toolbox, grab 2 ``||logic:0 = 0||`` blocks and place them in the **Workspace**. Drop 1 of the blocks in the space to the right of ``||logic:if||`` (replacing ``||logic:true||``). Take the second ``||logic:0 = 0||`` block and drop it in the space to the right of the ``||logic:else if||`` block.  Next, open the ``||variable:Variables||`` toolbox and grab 2 ``||variable:hand||`` variables and drop it in the **Workspace**. Place one ``||variable:hand||`` variable in the first zero space to the right of ``||logic:if||`` and the second in the first zero space on the ``||logic:else if||`` line.
 
 ```block
-let hand: number = 0
+export let hand: number = 0
 input.onGesture(Gesture.Shake, function () {
     hand = Module3_M1.setRandomHand()
     // @highlight
@@ -89,7 +94,7 @@ input.onGesture(Gesture.Shake, function () {
 Now, open the ``||Module3_M1:Mission 1||`` toolbox, grab the ``||Module3_M1:Rock||`` block and drop it to the right of the ``||variable:hand||`` variable at the top of your conditional statement (replacing the 0). Next, open the ``||Module3_M1:Mission 1||`` toolbox again, but this time grab the ``||Module3_M1:Paper||`` block and drop it in the 0 of the ``||logic:else if||`` in your conditional statement. Use the hint button if you need it. 
 
 ```block
-let hand: number = 0
+export let hand: number = 0
 input.onGesture(Gesture.Shake, function () {
     hand = Module3_M1.setRandomHand()
     // @highlight
@@ -103,12 +108,16 @@ input.onGesture(Gesture.Shake, function () {
 })
 ```
 
+```ghost
+Module3_M1.getScissors()
+```
+
 ## Step 7
 
 It's time to add our three game pieces! Open the ``||basic:Basic||`` toolbox and drag a ``||basic:show leds||`` block under the ``||logic:if||`` arm of your conditional statement. Next, do the same thing for the ``||logic:else if||`` and ``||logic:else||`` arms until you have a total of three ``||basic:show leds||`` blocks in your conditional statement.
 
 ```block
-let hand: number = 0
+export let hand: number = 0
 input.onGesture(Gesture.Shake, function () {
     hand = Module3_M1.setRandomHand()
     if (hand == Module3_M1.getRock()) {
@@ -144,12 +153,12 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Step 8
 
-Are you ready to get creative? Great, because it's time to digitally draw our game pieces. Go to the first ``||basic:show leds||`` block (under ``||Module3_M1:Rock||``) and click on the small squares to 'draw' your **rock** game piece. When you're done, go to the next ``||basic:show leds||`` block (under ``||logic:Paper||``) and this time 'draw' your **paper** game piece. Finally, in the last ``||basic:show leds||`` block (``||logic:else||``) draw your scissors game piece. We encourage you to be as creative as you like, but we've placed some samples in the hint if you need them.
+Are you ready to get creative? Great, because it's time to digitally draw our game pieces. Go to the first ``||basic:show leds||`` block (under ``||Module3_M1:Rock||``) and click on the small squares to 'draw' your **rock** game piece. When you're done, go to the next ``||basic:show leds||`` block (under ``||Module3_M1:Paper||``) and this time 'draw' your **paper** game piece. Finally, in the last ``||basic:show leds||`` block (``||logic:else||``) draw your scissors game piece. We encourage you to be as creative as you like, but we've placed some samples in the hint if you need them.
 
 Are you ready to get creative? Great, because it's time to digitally draw our game pieces. Go to the first show leds block (under Rock) and click on the small squares to draw your rock game piece. When you're done, go to the next show leds block (under Paper ) and this time draw your paper game piece. Finally, in the last show leds block (else) draw your scissors game piece. We encourage you to be as creative as you like, but we’ve placed some samples in the hint if you need them. 
 
 ```block
-let hand: number = 0
+export let hand: number = 0
 input.onGesture(Gesture.Shake, function () {
     hand = Module3_M1.setRandomHand()
     if (hand == Module3_M1.getRock()) {
@@ -183,12 +192,12 @@ input.onGesture(Gesture.Shake, function () {
 })
 ```
 
-## Step 8
+## Step 9
 
 Before we move on, let's take a closer look at what you have done. First, we use an ``||input:on shake||`` block to start our program. Next, we use a bit of math to randomly pick the rock, paper or scissors game piece and store it in a ``||variable:variable||`` called ``||variable:hand||``. A ``||logic:conditional statement||`` will then look at the stored game piece and show the ``||basic:led||`` that matches it on your robot’s screen. Incredible! You have used inputs, variables, conditional statements and a bit of math to build your own computer game!
 
 ```block
-let hand: number = 0
+export let hand: number = 0
 input.onGesture(Gesture.Shake, function () {
     hand = Module3_M1.setRandomHand()
     if (hand == Module3_M1.getRock()) {
@@ -222,6 +231,6 @@ input.onGesture(Gesture.Shake, function () {
 })
 ```
 
-## Step 8
+## Step 10
 
 It's time to challenge the computer. Win 2 out of 3 games of rock, paper, and scissors to complete the mission and continue Lise and Soren’s Jupiter Challenge. You can shake your robot gently after each game to reset it. Good luck!
