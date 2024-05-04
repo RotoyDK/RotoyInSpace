@@ -1,8 +1,9 @@
-### @hideIteration true
-
 ```template
 basic.forever(function () {
 })
+```
+
+```template
 //
 ```
 
@@ -103,3 +104,5 @@ input.onButtonPressed(Button.B, function () {
 ## Step 8
 
 Wow, you did it!. Not only will your robot move, but it will avoid any dangerous obstacles like rocks or, in this case, black lines. Before you test your code, you will probably want to place some dark tape or paper down on the floor for your robot to find. When you are ready, turn on your robot, connect it to your computer, and hit the purple ``|Download|`` button in the bottom left hand corner of the MakeCode screen. Time to explore!
+
+### @hideIteration true
