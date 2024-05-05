@@ -34,7 +34,7 @@ You’re doing great! Now, when you start your program, players will know what t
 
 ```block
 // @hide
-let X = RotoyVariables.setX()
+export let X = RotoyVariables.setX()
 input.onButtonPressed(Button.A, function () {
     // @highlight
     X = randint(0, 10)
@@ -51,11 +51,11 @@ Now that we have a random number selected, we still need a way to display it for
 
 ```block
 // @hide
-let X = RotoyVariables.setX()
+export let X = RotoyVariables.setX()
 input.onButtonPressed(Button.A, function () {
-    x = randint(0, 10)
+    X = randint(0, 10)
     // @highlight
-    basic.showNumber(x)
+    basic.showNumber(X)
 })
 ```
 
