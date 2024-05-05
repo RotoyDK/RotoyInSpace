@@ -33,10 +33,11 @@ basic.showString("Guess from 0 to 10")
 You’re doing great! Now, when you start your program, players will know what to do. Next, open the ``||RotoyVariables:Variables||`` toolbox and drag a ``||RotoyVariables:set X to 0||`` block and place it inside the ``||input:on button A pressed||`` block. Next, open the ``||math:Math||`` toolbox, select a ``||math:pick a random 0 to 10||`` block, and place it in the ``||RotoyVariables:set X to 0||`` block. This should replace the 0 already there. Remember, you can always click on the hint button below if you are having trouble.  
 
 ```block
-export let x: number = 0
+// hide
+let X = RotoyVariables.setX()
 input.onButtonPressed(Button.A, function () {
     // @highlight
-    x = randint(0, 10)
+    X = randint(0, 10)
 })
 ```
 
