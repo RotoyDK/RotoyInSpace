@@ -1,12 +1,15 @@
 ### @hideIteration true
 
+```customts
+export let hand: number = null
+```
+
 ```template
-let hand: number = null
 basic.forever(function () {
 })
 ```
 
-# Mission 5
+# Mission 3
 
 ## Introduction @showdialog
 
@@ -54,7 +57,7 @@ if (true) {
 
 ## Step 4
 
-You are doing so well! Let’s take a minute to review your program so far. First, you added an ``||input:on shake||`` block to start your program. You then used a bit of math to randomly choose a game piece, which you stored in a variable named ``||variable:hand||``. Finally, you added a ``||logic:conditional||`` statement, which tells your program what to do with the hand variable. Wow! 
+You are doing so well! Let's take a minute to review your program so far. First, you added an ``||input:on shake||`` block to start your program. You then used a bit of math to randomly choose a game piece, which you stored in a variable named ``||variable:hand||``. Finally, you added a ``||logic:conditional||`` statement, which tells your program what to do with the hand variable. Wow! 
 
 ```block
 let hand: number = 0
@@ -156,7 +159,7 @@ input.onGesture(Gesture.Shake, function () {
 
 Are you ready to get creative? Great, because it's time to digitally draw our game pieces. Go to the first ``||basic:show leds||`` block (under ``||Module3_M1:Rock||``) and click on the small squares to 'draw' your **rock** game piece. When you're done, go to the next ``||basic:show leds||`` block (under ``||Module3_M1:Paper||``) and this time 'draw' your **paper** game piece. Finally, in the last ``||basic:show leds||`` block (``||logic:else||``) draw your scissors game piece. We encourage you to be as creative as you like, but we've placed some samples in the hint if you need them.
 
-Are you ready to get creative? Great, because it's time to digitally draw our game pieces. Go to the first show leds block (under Rock) and click on the small squares to draw your rock game piece. When you're done, go to the next show leds block (under Paper ) and this time draw your paper game piece. Finally, in the last show leds block (else) draw your scissors game piece. We encourage you to be as creative as you like, but we’ve placed some samples in the hint if you need them. 
+Are you ready to get creative? Great, because it's time to digitally draw our game pieces. Go to the first show leds block (under Rock) and click on the small squares to draw your rock game piece. When you're done, go to the next show leds block (under Paper ) and this time draw your paper game piece. Finally, in the last show leds block (else) draw your scissors game piece. We encourage you to be as creative as you like, but we've placed some samples in the hint if you need them. 
 
 ```block
 export let hand: number = 0
@@ -195,7 +198,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Step 9
 
-Before we move on, let's take a closer look at what you have done. First, we use an ``||input:on shake||`` block to start our program. Next, we use a bit of math to randomly pick the rock, paper or scissors game piece and store it in a ``||variable:variable||`` called ``||variable:hand||``. A ``||logic:conditional statement||`` will then look at the stored game piece and show the ``||basic:led||`` that matches it on your robot’s screen. Incredible! You have used inputs, variables, conditional statements and a bit of math to build your own computer game!
+Before we move on, let's take a closer look at what you have done. First, we use an ``||input:on shake||`` block to start our program. Next, we use a bit of math to randomly pick the rock, paper or scissors game piece and store it in a ``||variable:variable||`` called ``||variable:hand||``. A ``||logic:conditional statement||`` will then look at the stored game piece and show the ``||basic:led||`` that matches it on your robot's screen. Incredible! You have used inputs, variables, conditional statements and a bit of math to build your own computer game!
 
 ```block
 export let hand: number = 0
@@ -234,4 +237,4 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Step 10
 
-It's time to challenge the computer. Win 2 out of 3 games of rock, paper, and scissors to complete the mission and continue Lise and Soren’s Jupiter Challenge. You can shake your robot gently after each game to reset it. Good luck!
+It's time to challenge the computer. Win 2 out of 3 games of rock, paper, and scissors to complete the mission and continue Lise and Soren's Jupiter Challenge. You can shake your robot gently after each game to reset it. Good luck!
