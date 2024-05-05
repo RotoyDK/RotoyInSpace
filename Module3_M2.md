@@ -1,17 +1,18 @@
 ### @hideIteration true
 
 ```template
-basic.forever(function () {
-})
+//
 ```
 
-# Mission 1
+# Mission 2
 
 ## Introduction @showdialog
 
-Beat the computer in a game of Rock, Paper, Scissors!
+Guess the secret number twice in a row to open the door and beat the computer.
 
 ## Step 1
+
+Our **Workspace** looks a little too empty. Let’s fix that by opening the Basic toolbox and dragging an on start block into the workspace. While we are here, let’s open the Input toolbox and drag an on button A block into our workspace as well. These two blocks will serve as the foundation for our program. 
 
 To start, open the ``||input:Input||`` toolbox and add an ``||input:on shake||`` block to your **Workspace**. This block works just like the ``||input:A||`` and ``||input:B||`` buttons that you used in other missions, but instead of pressing a button to start your program, here you will give your robot a gentle shake.
 
