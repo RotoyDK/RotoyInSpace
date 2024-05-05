@@ -1,9 +1,5 @@
 ### @hideIteration true
 
-```ghost
-export let hand: number = 0
-```
-
 ```template
 basic.forever(function () {
 })
