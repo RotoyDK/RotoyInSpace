@@ -1,6 +1,7 @@
 ### @hideIteration true
 
 ```template
+let hand: number = null
 basic.forever(function () {
 })
 ```
