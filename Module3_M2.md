@@ -47,7 +47,7 @@ Before we move on, lets take a moment to review that last step.  First, you took
 
 ## Step 5
 
-Now that we have a random number selected, we still need a way to display it for our game to work. We can do that by opening the ``||basic:Basic||`` toolbox, grabbing a ``||basic:show number||`` block and placing it below the variable ``||variable:set X to||`` ``||math:pick a random 0 to 10||`` block. This will take the random number stored in variable X and show it on your robot’s screen. 
+Now that we have a random number selected, we still need a way to display it for our game to work. We can do that by opening the ``||basic:Basic||`` toolbox, grabbing a ``||basic:show number||`` block and placing it below the variable ``||variable:set X to||`` ``||math:pick a random 0 to 10||`` block. Then, open ``||variable:Variables||`` toolbox and drag ``||variable:X||`` in the empty space next to ``||basic:show number||`` block. This will take the random number stored in variable X and show it on your robot’s screen. 
 
 ```block
 // @hide
