@@ -1,7 +1,7 @@
 ### @hideIteration true
 
 ```ghost
-export let hand: number = null
+export let hand: number = 0
 ```
 
 ```template
