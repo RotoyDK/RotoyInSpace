@@ -187,6 +187,40 @@ namespace Module3_M1 {
 /**
  * Custom blocks
  */
+//% weight=100 color=#43228e icon="\uf197" block="Mission 2"
+namespace Module5_M2 {
+
+    export let start_time = 0
+    export let shakeCount = 0
+
+    //% weight=90
+    //% block="change shakeCount by 1"
+    export function onShake(): void {
+        if ((input.runningTime() - start_time) / 1000 >= 5) {
+            start_time = 0
+            shakeCount = 0
+        }
+        start_time = input.runningTime()
+        shakeCount += 1
+    }
+
+    //% weight=90
+    //% block="set shakeCount to 0" 
+    export function onStart(): void {
+        start_time = 0
+        shakeCount = 0
+    }
+
+    //% weight=90
+    //% block="shakeCount"
+    export function getShakeCount(): number {
+        return shakeCount;
+    }
+}
+
+/**
+ * Custom blocks
+ */
 //% weight=100 color=#3958D3 icon="\uf06b"
 namespace Mission2 {
     //% weight=90
