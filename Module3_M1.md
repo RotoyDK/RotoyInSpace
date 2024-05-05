@@ -1,6 +1,6 @@
 ### @hideIteration true
 
-```customts
+```ghost
 export let hand: number = null
 ```
 
