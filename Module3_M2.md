@@ -30,11 +30,11 @@ basic.showString("Guess from 0 to 10")
 
 ## Step 3
 
-You’re doing great! Now, when you start your program, players will know what to do. Next, open the ``||RotoyVariables:Variables||`` toolbox and drag a ``||RotoyVariables:set X to 0||`` block and place it inside the ``||input:on button A pressed||`` block. Next, open the ``||math:Math||`` toolbox, select a ``||math:pick a random 0 to 10||`` block, and place it in the ``||RotoyVariables:set X to 0||`` block. This should replace the 0 already there. Remember, you can always click on the hint button below if you are having trouble.  
+You’re doing great! Now, when you start your program, players will know what to do. Next, open the ``||variable:Variables||`` toolbox, click **Make a  Variable** and call it **X**. Then, drag a ``||variable:set X to 0||`` block and place it inside the ``||input:on button A pressed||`` block. Next, open the ``||math:Math||`` toolbox, select a ``||math:pick a random 0 to 10||`` block, and place it in the ``||variable:set X to 0||`` block. This should replace the 0 already there. Remember, you can always click on the hint button below if you are having trouble.  
 
 ```block
 // @hide
-export let X = RotoyVariables.setX()
+export let X = 0
 input.onButtonPressed(Button.A, function () {
     // @highlight
     X = randint(0, 10)
@@ -43,15 +43,15 @@ input.onButtonPressed(Button.A, function () {
 
 ## Step 4
 
-Before we move on, lets take a moment to review that last step.  First, you took a ``||RotoyVariables:variable||`` and named it ``||RotoyVariables:X||``. Then, you used a ``||math:Math||`` function to generate a random number from 0 to 10 and stored that number in the ``||RotoyVariables:X variable||``. Very cool! 
+Before we move on, lets take a moment to review that last step.  First, you took a ``||variable:variable||`` and named it ``||variable:X||``. Then, you used a ``||math:Math||`` function to generate a random number from 0 to 10 and stored that number in the ``||variable:X variable||``. Very cool! 
 
 ## Step 5
 
-Now that we have a random number selected, we still need a way to display it for our game to work. We can do that by opening the ``||basic:Basic||`` toolbox, grabbing a ``||basic:show number||`` block and placing it below the variable ``||RotoyVariables:set X to||`` ``||math:pick a random 0 to 10||`` block. This will take the random number stored in variable X and show it on your robot’s screen. 
+Now that we have a random number selected, we still need a way to display it for our game to work. We can do that by opening the ``||basic:Basic||`` toolbox, grabbing a ``||basic:show number||`` block and placing it below the variable ``||variable:set X to||`` ``||math:pick a random 0 to 10||`` block. This will take the random number stored in variable X and show it on your robot’s screen. 
 
 ```block
 // @hide
-export let X = RotoyVariables.setX()
+export let X = 0
 input.onButtonPressed(Button.A, function () {
     X = randint(0, 10)
     // @highlight
