@@ -32,14 +32,6 @@ namespace RotoyVariables {
     export function turnOnMethod(): boolean {
         return turnOn
     }
-    
-    //% weight=90
-    //% block="0"
-    //% blockSetVariable=X
-    //% group="Set Variables"
-    export function setX(): number {
-        return 0
-    }
 }
 
 
