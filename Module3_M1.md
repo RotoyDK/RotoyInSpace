@@ -155,8 +155,6 @@ input.onGesture(Gesture.Shake, function () {
 
 Are you ready to get creative? Great, because it's time to digitally draw our game pieces. Go to the first ``||basic:show leds||`` block (under ``||Module3_M1:Rock||``) and click on the small squares to 'draw' your **rock** game piece. When you're done, go to the next ``||basic:show leds||`` block (under ``||Module3_M1:Paper||``) and this time 'draw' your **paper** game piece. Finally, in the last ``||basic:show leds||`` block (``||logic:else||``) draw your scissors game piece. We encourage you to be as creative as you like, but we've placed some samples in the hint if you need them.
 
-Are you ready to get creative? Great, because it's time to digitally draw our game pieces. Go to the first show leds block (under Rock) and click on the small squares to draw your rock game piece. When you're done, go to the next show leds block (under Paper ) and this time draw your paper game piece. Finally, in the last show leds block (else) draw your scissors game piece. We encourage you to be as creative as you like, but we've placed some samples in the hint if you need them. 
-
 ```block
 export let hand: number = 0
 input.onGesture(Gesture.Shake, function () {
@@ -164,20 +162,20 @@ input.onGesture(Gesture.Shake, function () {
     if (hand == Module3_M1.getRock()) {
         // @highlight
         basic.showLeds(`
-            # # # # #
-            # . . . #
-            # . . . #
-            # . . . #
-            # # # # #
-            `)
-    } else if (hand == Module3_M1.getPaper()) {
-        // @highlight
-        basic.showLeds(`
             . . . . .
             . # # # #
             # # # # #
             # # # # .
             . # # # .
+            `)
+    } else if (hand == Module3_M1.getPaper()) {
+        // @highlight
+        basic.showLeds(`
+            # # # # #
+            # . . . #
+            # . . . #
+            # . . . #
+            # # # # #
             `)
     } else {
         // @highlight
@@ -203,20 +201,20 @@ input.onGesture(Gesture.Shake, function () {
     if (hand == Module3_M1.getRock()) {
         // @highlight
         basic.showLeds(`
-            # # # # #
-            # . . . #
-            # . . . #
-            # . . . #
-            # # # # #
-            `)
-    } else if (hand == Module3_M1.getPaper()) {
-        // @highlight
-        basic.showLeds(`
             . . . . .
             . # # # #
             # # # # #
             # # # # .
             . # # # .
+            `)
+    } else if (hand == Module3_M1.getPaper()) {
+        // @highlight
+        basic.showLeds(`
+            # # # # #
+            # . . . #
+            # . . . #
+            # . . . #
+            # # # # #
             `)
     } else {
         // @highlight
