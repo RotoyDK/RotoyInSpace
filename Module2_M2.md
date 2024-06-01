@@ -78,13 +78,14 @@ Let’s finish our program by dropping one of the  ``||game:Lunar_module change 
 
 ```blocks
 export let Lunar_module: game.LedSprite = null
+// @highlight
 input.onButtonPressed(Button.A, function () {
     Lunar_module.change(LedSpriteProperty.X, -1)
 })
+// @highlight
 input.onButtonPressed(Button.B, function () {
     Lunar_module.change(LedSpriteProperty.X, 1)
 })
-let Lunar_module: game.LedSprite = null
 Lunar_module = game.createSprite(2, 4)
 Module2_M2.playGame(Lunar_module)
 ```
