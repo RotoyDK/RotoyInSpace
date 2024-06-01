@@ -12,7 +12,7 @@ For this task, you will be using variables, conditional statements and your robo
 
 ## Step 2
 
-First, open the ``||basic:Basic||`` toolbox and drag a ``||basic:forever||`` block into your workspace. This block is the foundation for many of your projects and tells your program when and how often it should run. Basically, anything you place inside the ``||basic:forever||`` block will continue to run until you turn off your robot.  
+Let's start with ``||basic:forever||`` block in your **Workspace**. This block is the foundation for many of your projects and tells your program when and how often it should run. Basically, anything you place inside the ``||basic:forever||`` block will continue to run until you turn off your robot.  
 
 ```block
 // @highlight
