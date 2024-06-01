@@ -148,6 +148,44 @@ namespace Module1_M2 {
 /**
  * Custom blocks
  */
+//% weight=100 color=#43228e icon="\uf197" block="Mission 2"
+namespace Module2_M2 {
+    
+    //% weight=90
+    //% block="play game with %lunarModule"
+    export function playGame(lunarModule: game.LedSprite): void {
+        let asteroid2: game.LedSprite = null
+        let asteroid1: game.LedSprite = null
+        let wininningScore = 2
+        game.setScore(0)
+
+        for (let index = 0; index <= 30; index++) {
+            asteroid1 = game.createSprite(randint(0, 4), 0)
+            asteroid2 = game.createSprite(randint(0, 4), 0)
+            for (let index2 = 0; index2 < 4; index2++) {
+                basic.pause(1000 - 70 * index)
+                asteroid1.change(LedSpriteProperty.Y, 1)
+                asteroid2.change(LedSpriteProperty.Y, 1)
+            }
+            if (lunarModule.isTouching(asteroid1) || lunarModule.isTouching(asteroid2)) {
+                if (game.score() >= wininningScore) {
+                    basic.showIcon(IconNames.Happy)
+                } else {
+                    basic.showIcon(IconNames.Sad)
+                }
+                game.gameOver()
+            } else {
+                game.addScore(1)
+            }
+            asteroid1.delete()
+            asteroid2.delete()
+        }
+    }
+}
+
+/**
+ * Custom blocks
+ */
 //% weight=100 color=#43228e icon="\uf197" block="Mission 1"
 namespace Module3_M1 {
 
