@@ -1,7 +1,8 @@
 ### @hideIteration true
 
 ```template
-
+startTime = 0
+shakeCount = 0
 ```
 
 # Mission 1
