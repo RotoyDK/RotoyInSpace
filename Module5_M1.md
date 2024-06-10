@@ -12,7 +12,7 @@ Help Lise program a seismograph and record the moonquakes!
 
 ## Step 1
 
-Lise needs to record the number of moonquakes. Let’s help her by programming a seismograph. Open the ``||input:Input||`` toolbox and add an ``||input:on shake||`` block to your **Workspace**. This block tells your robot to do something when you shake it. You can even make it do different things depending on how many times your robot is shaken. Neat, huh?
+Lise needs to record the number of moonquakes. Let's help her by programming a seismograph. Open the ``||input:Input||`` toolbox and add an ``||input:on shake||`` block to your **Workspace**. This block tells your robot to do something when you shake it. You can even make it do different things depending on how many times your robot is shaken. Neat, huh?
 
 ```blocks
 ```
@@ -27,7 +27,7 @@ Next, we are going to add a special code block that will reset our seismograph e
 
 ## Step 3
 
-Great job! That reset block is important because without it, your robot would just keep counting the earthquakes forever. That would be one tired robot!. Now, let’s start working on the counting part of our program. Click the next button to move to the next step.
+Great job! That reset block is important because without it, your robot would just keep counting the earthquakes forever. That would be one tired robot!. Now, let's start working on the counting part of our program. Click the next button to move to the next step.
 
 ## Step 4
 
@@ -38,7 +38,7 @@ Ok, let's start by opening the ``||variables:Variables||`` toolbox! We are going
 
 ## Step 5
 
-Let’s finish the ``||input:on shake||`` part of our program before taking a moment to review our program so far. Open the ``||input:Input||`` toolbox and grab the ``||input:running time (ms)||`` block. To find it, you will need to click on the ``||input:more||`` button that appears after you open the ``||input:Input||`` toolbox. Take the ``||input:running time (ms)||`` block and place it in the ``||variables:set startTime||`` block replacing the ``||variables:0||``. 
+Let's finish the ``||input:on shake||`` part of our program before taking a moment to review our program so far. Open the ``||input:Input||`` toolbox and grab the ``||input:running time (ms)||`` block. To find it, you will need to click on the ``||input:more||`` button that appears after you open the ``||input:Input||`` toolbox. Take the ``||input:running time (ms)||`` block and place it in the ``||variables:set startTime||`` block replacing the ``||variables:0||``. 
 
 ## Step 6
 
@@ -49,18 +49,18 @@ This seems like a good time to review what you have done so far. First, you used
 
 ## Step 7
 
-Our seismograph is almost done, but we still need to tell the robot what it should reset to every 3 seconds. We can do that by opening the ``||basic:Basic||`` toolbox and adding a ``||basic:on start||`` block to our **Workspace**. Then, let’s open the ``||variables:Variables||`` toolbox and place one ``||variables:set startTimeto 0||`` block and one ``||variables:set shakeCount to 0||`` block right under the blue ``||basic:on start||`` block. Don’t forget to change ``||variables:set shakeCount||`` to ``||variables:set startTime to 0||``. You can click the hint button if you find yourself stuck. 
+Our seismograph is almost done, but we still need to tell the robot what it should reset to every 3 seconds. We can do that by opening the ``||basic:Basic||`` toolbox and adding a ``||basic:on start||`` block to our **Workspace**. Then, let's open the ``||variables:Variables||`` toolbox and place one ``||variables:set startTimeto 0||`` block and one ``||variables:set shakeCount to 0||`` block right under the blue ``||basic:on start||`` block. Don't forget to change ``||variables:set shakeCount||`` to ``||variables:set startTime to 0||``. You can click the hint button if you find yourself stuck. 
 
 ```block
 ```
 
 ## Step 8
 
-Did you notice that something is missing from our program? That’s right! We still need to tell the program to show us the number of quakes that it has counted. To do this, open the ``||basic:Basic||`` toolbox, grab a ``||basic:show number 0||`` block and place it at the bottom of the ``||input:on shake||`` code block. Finally, open the ``||variables:Variables||`` toolbox, grab the ``||variables:shakeCount||`` variable and place it in the ``||basic:show number 0||`` block. Great job!
+Did you notice that something is missing from our program? That's right! We still need to tell the program to show us the number of quakes that it has counted. To do this, open the ``||basic:Basic||`` toolbox, grab a ``||basic:show number 0||`` block and place it at the bottom of the ``||input:on shake||`` code block. Finally, open the ``||variables:Variables||`` toolbox, grab the ``||variables:shakeCount||`` variable and place it in the ``||basic:show number 0||`` block. Great job!
 
 ## Step 9
 
-Your seismograph is now ready to start counting moonquakes. Download the program into your robot and give it a few shakes! Did the number change? Awesome! Have fun, but don’t forget that Lise is waiting.
+Your seismograph is now ready to start counting moonquakes. Download the program into your robot and give it a few shakes! Did the number change? Awesome! Have fun, but don't forget that Lise is waiting.
 
 
 
