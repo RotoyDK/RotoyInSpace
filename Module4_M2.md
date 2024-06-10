@@ -37,26 +37,27 @@ basic.forever(function () {
 
 A digital level works by checking the tilt (or angles) of the x and y axes. We will need to add that if we want our program to work. Open the ``||math:Math||`` toolbox and drag **two** ``||math:absolute of 0||`` blocks into your **Workspace**. Now, open the ``||variables:Variables||`` toolbox and create two variables - ``||variables:x||`` and ``||variables:y||``. Then, grab ``||variables:x||`` block and add it to one of your ``||math:absolute of 0||`` blocks replacing the 0. Now go back to the ``||variables:Variables||`` toolbox and add one ``||variables:y||`` block to the other ``||math:absolute of 0||`` block.
 
-```blocks
+```block
 export let x = 0
 export let y = 0
 // @highlight
-Math.abs(x)
+basic.showNumber(Math.abs(x))
 // @highlight
-Math.abs(y)
+basic.showNumber(Math.abs(y))
 ```
 
 ## Step 4
 
 Let's start putting together our conditional statement. Open the ``||logic:Logic||`` toolbox and add two ``||logic:0 = 0||`` blocks to your **Workspace**. Next, using the arrow change the ``||logic:=||`` sign to a ``||logic:>||`` (greater than) on both blocks. Now, let's take our ``||math:absolute of x||`` and ``||math:absolute of y||`` blocks and add them to the left-hand side of the ``||logic:0 > 0||`` blocks. Don't forget to use the hint if you feel stuck. Great job!
 
-```blocks
+```block
 export let x = 0
 export let y = 0
-// @highlight
-Math.abs(x) > 0
-// @highlight
-Math.abs(y) > 0
+    // @highlight
+    if (Math.abs(x) > 0) {
+    } else if (Math.abs(y) > 0) {
+    } else {
+    }
 ```
 
 ## Step 5
