@@ -23,7 +23,7 @@ basic.forever(function () {
 ## Step 2
 
 Since our program will have to make decisions based on whether a condition is true or not, let’s open up the ``||logic:Logic||`` toolbox and add a ``||logic:if then else||`` block to our ``||basic:forever||`` block. Next, let’s click the ``||logic:+||`` sign below ``||logic:else||`` to add an extra space to our conditional statement. Hey, did you notice what happened to the ``||logic:else||``? That’s right, it became ``||logic:else if||``!
-
+c
 
 ```block
 basic.forever(function () {
