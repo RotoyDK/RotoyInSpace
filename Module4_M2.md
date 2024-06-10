@@ -19,7 +19,6 @@ basic.forever(function () {
 ## Step 2
 
 Since our program will have to make decisions based on whether a condition is true or not, let's open up the ``||logic:Logic||`` toolbox and add a ``||logic:if then else||`` block to our ``||basic:forever||`` block. Next, let's click the ``||logic:+||`` sign below ``||logic:else||`` to add an extra space to our conditional statement. Hey, did you notice what happened to the ``||logic:else||``? That's right, it became ``||logic:else if||``!
-c
 
 ```block
 basic.forever(function () {
@@ -38,7 +37,7 @@ basic.forever(function () {
 
 A digital level works by checking the tilt (or angles) of the x and y axes. We will need to add that if we want our program to work. Open the ``||math:Math||`` toolbox and drag **two** ``||math:absolute of 0||`` blocks into your **Workspace**. Now, open the ``||variables:Variables||`` toolbox and create two variables - ``||variables:x||`` and ``||variables:y||``. Then, grab ``||variables:x||`` block and add it to one of your ``||math:absolute of 0||`` blocks replacing the 0. Now go back to the ``||variables:Variables||`` toolbox and add one ``||variables:y||`` block to the other ``||math:absolute of 0||`` block.
 
-```block
+```blocks
 export let x = 0
 export let y = 0
 // @highlight
@@ -51,7 +50,7 @@ Math.abs(y)
 
 Let's start putting together our conditional statement. Open the ``||logic:Logic||`` toolbox and add two ``||logic:0 = 0||`` blocks to your **Workspace**. Next, using the arrow change the ``||logic:=||`` sign to a ``||logic:>||`` (greater than) on both blocks. Now, let's take our ``||math:absolute of x||`` and ``||math:absolute of y||`` blocks and add them to the left-hand side of the ``||logic:0 > 0||`` blocks. Don't forget to use the hint if you feel stuck. Great job!
 
-```block
+```blocks
 export let x = 0
 export let y = 0
 // @highlight
@@ -103,7 +102,6 @@ Did you notice something with your program so far that might cause a problem lat
 export let x = 0
 export let y = 0
 basic.forever(function () {
-    // @highlight
     x = input.acceleration(Dimension.X)
     // @highlight
     y = input.acceleration(Dimension.Y)
