@@ -12,7 +12,7 @@ Will you be able to help Lise and Soren bring the probe back under control?
 
 ## Step 1
 
-Oh no! It looks like the Voyager probe is spinning helplessly in space. Let’s write a program that will help Lise and Soren bring it back under control. Let’s start by opening the ``||basic:Basic||`` toolbox and dragging out the ``||basic:forever||`` block to your **Workspace**. This block will make sure that your program is always running!
+Oh no! It looks like the Voyager probe is spinning helplessly in space. Let's write a program that will help Lise and Soren bring it back under control. Let's start by opening the ``||basic:Basic||`` toolbox and dragging out the ``||basic:forever||`` block to your **Workspace**. This block will make sure that your program is always running!
 
 ```block
 // @highlight
@@ -22,7 +22,7 @@ basic.forever(function () {
 
 ## Step 2
 
-Since our program will have to make decisions based on whether a condition is true or not, let’s open up the ``||logic:Logic||`` toolbox and add a ``||logic:if then else||`` block to our ``||basic:forever||`` block. Next, let’s click the ``||logic:+||`` sign below ``||logic:else||`` to add an extra space to our conditional statement. Hey, did you notice what happened to the ``||logic:else||``? That’s right, it became ``||logic:else if||``!
+Since our program will have to make decisions based on whether a condition is true or not, let's open up the ``||logic:Logic||`` toolbox and add a ``||logic:if then else||`` block to our ``||basic:forever||`` block. Next, let's click the ``||logic:+||`` sign below ``||logic:else||`` to add an extra space to our conditional statement. Hey, did you notice what happened to the ``||logic:else||``? That's right, it became ``||logic:else if||``!
 c
 
 ```block
@@ -53,7 +53,7 @@ Math.abs(y)
 
 ## Step 4
 
-Let’s start putting together our conditional statement. Open the ``||logic:Logic||`` toolbox and add two ``||logic:0 = 0||`` blocks to your **Workspace**. Next, using the arrow change the ``||logic:=||`` sign to a ``||logic:>||`` (greater than) on both blocks. Now, let’s take our ``||math:absolute of x||`` and ``||math:absolute of y||`` blocks and add them to the left-hand side of the ``||logic:0 > 0||`` blocks. Don’t forget to use the hint if you feel stuck. Great job!
+Let's start putting together our conditional statement. Open the ``||logic:Logic||`` toolbox and add two ``||logic:0 = 0||`` blocks to your **Workspace**. Next, using the arrow change the ``||logic:=||`` sign to a ``||logic:>||`` (greater than) on both blocks. Now, let's take our ``||math:absolute of x||`` and ``||math:absolute of y||`` blocks and add them to the left-hand side of the ``||logic:0 > 0||`` blocks. Don't forget to use the hint if you feel stuck. Great job!
 
 ```block
 export let x = 0
@@ -101,7 +101,7 @@ basic.forever(function () {
 
 ## Step 7
 
-Did you notice something with your program so far that might cause a problem later? Take a close look at the ``||variables:set x||`` and ``||variables:set y||`` blocks at the top of your code block. Do you see it now? Thats right, one of the variables in our acceleration blocks doesn’t match the variable it is set to. Good thing we caught that. Use the arrows and make sure that ``||variables:set x||`` matches ``||input:acceleration (mg) x||`` and that ``||variables:set y||`` matches ``||input:acceleration (mg) y||``.
+Did you notice something with your program so far that might cause a problem later? Take a close look at the ``||variables:set x||`` and ``||variables:set y||`` blocks at the top of your code block. Do you see it now? Thats right, one of the variables in our acceleration blocks doesn't match the variable it is set to. Good thing we caught that. Use the arrows and make sure that ``||variables:set x||`` matches ``||input:acceleration (mg) x||`` and that ``||variables:set y||`` matches ``||input:acceleration (mg) y||``.
 
 ```block
 export let x = 0
@@ -140,7 +140,7 @@ basic.forever(function () {
 
 ## Step 9
 
-Incredible! You used conditional statements, variables and even a little math to code your own digital level. Go ahead and download the program into your robot and try it out. But don’t take too long... Soren and Lise still need your help to save the Voyager probe!
+Incredible! You used conditional statements, variables and even a little math to code your own digital level. Go ahead and download the program into your robot and try it out. But don't take too long... Soren and Lise still need your help to save the Voyager probe!
 
 
 
