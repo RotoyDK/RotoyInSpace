@@ -1,6 +1,6 @@
 {
     "name": "Rotoy in Space",
-    "version": "1.0.72",
+    "version": "1.0.73",
     "description": "",
     "dependencies": {
         "core": "*",
