@@ -45,7 +45,7 @@ basic.forever(function () {
 
 ## Step 3
 
-Now, lets tell our program what to do when you shake your robot. Open the ``||logic:Logic||`` toolbox and drag 4 ``||logic:0 = 0||`` blocks to your **Workspace**. Next, open the ``||Module5_M2:Mission 2||`` toolbox and add 4 ``||Module5_M2:shakeCount||`` variables to your workspace. Now take your 4 ``||Module5_M2:shakeCount||`` variables and place them in your 4 ``||logic:0 = 0||`` blocks replacing the 0 on the left.   
+Now, lets tell our program what to do when you shake your robot. Open the ``||logic:Logic||`` toolbox and drag 4 ``||logic:0 = 0||`` blocks to your **Workspace**. Next, open the ``||Module5_M2:Mission 2||`` toolbox and add 4 ``||Module5_M2:shakeCount||`` variables to your **Workspace**. Now take your 4 ``||Module5_M2:shakeCount||`` variables and place them in your 4 ``||logic:0 = 0||`` blocks replacing the 0 on the left.   
 
 ## Step 4
 

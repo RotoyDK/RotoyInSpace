@@ -11,7 +11,7 @@ namespace RotoyVariables {
 
     //% weight=90
     //% block="set turnOn to true"
-    //% block.loc.da="sæt tændFor til sand"
+    //% block.loc.da="sæt tænd som sand"
     //% group="Set Variables"
     export function setTurnOnTrue() {
         turnOn = true
@@ -19,7 +19,7 @@ namespace RotoyVariables {
 
     //% weight=90
     //% block="set turnOn to false"
-    //% block.loc.da="sæt tændFor til falsk"
+    //% block.loc.da="sæt tænd som falsk"
     //% group="Set Variables"
     export function setTurnOnFalse() {
         turnOn = false
@@ -27,7 +27,7 @@ namespace RotoyVariables {
 
     //% weight=90
     //% block="turnOn"
-    //% block.loc.da="tændFor"
+    //% block.loc.da="tænd"
     //% group="Your Variables"
     export function turnOnMethod(): boolean {
         return turnOn
@@ -51,7 +51,7 @@ namespace Module1_M1 {
 
     //% weight=90
     //% block="move forward %on"
-    //% block.loc.da="gå fremad %on"
+    //% block.loc.da="ryk frem ad %on"
     export function moveForward(on: boolean) {
         if (on && !moveForwardVar) {
             maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 100)
@@ -64,7 +64,7 @@ namespace Module1_M1 {
 
     //% weight=90
     //% block="find black line %on"
-    //% block.loc.da="find sort linje %on"
+    //% block.loc.da="find den sorte linje %on"
     export function findBlackLine(on: boolean) {
         if (on && moveForwardVar) {
             lineCrossed = maqueen.readPatrol(maqueen.Patrol.PatrolLeft) == 0 || maqueen.readPatrol(maqueen.Patrol.PatrolRight) == 0
@@ -107,7 +107,7 @@ namespace Module1_M2 {
 
     //% weight=90
     //% block="Cave lights %on"
-    //% block.loc.da="Hulelys %on"
+    //% block.loc.da="Hule lys %on"
     export function caveLights(on: boolean) {
         if (on) {
             led0.showColor(neopixel.colors(NeoPixelColors.Red))
@@ -153,6 +153,7 @@ namespace Module2_M2 {
     
     //% weight=90
     //% block="play game with %lunarModule"
+    //% block.loc.da="spil spillet med %lunarModule"
     export function playGame(lunarModule: game.LedSprite): void {
         let asteroid2: game.LedSprite = null
         let asteroid1: game.LedSprite = null

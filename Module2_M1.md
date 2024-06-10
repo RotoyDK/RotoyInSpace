@@ -60,7 +60,7 @@ basic.forever(function () {
 
 ## Step 6
 
-Now, we need to tell the program how to show the strength of the light that it is measuring. To do this, open the ``||basic:Basic||`` toolbox, grab the ``||basic:show number||`` block and place it under your ``||logic:if||`` ``||input:button A is pressed||`` block. The program now needs to know what number it should show. Fortunately, we already have a variable storing the light level that we can use. Open the ``||variables:Variables||`` toolbox, grab the ``||variables:reading||`` block and place it to the right of ``||basic:show number||``. 
+Now, we need to tell the program how to show the strength of the light that it is measuring. To do this, open the ``||basic:Basic||`` toolbox, grab the ``||basic:show number||`` block and place it under your ``||logic:if||`` ``||input:button A is pressed||`` ``||logic:then||`` block. The program now needs to know what number it should show. Fortunately, we already have a variable storing the light level that we can use. Open the ``||variables:Variables||`` toolbox, grab the ``||variables:reading||`` block and place it to the right of ``||basic:show number||``. 
 
 ```block
 export let reading = 0
@@ -72,7 +72,7 @@ if (input.buttonIsPressed(Button.A)) {
 
 ## Step 7
 
-Let’s take a moment to review what you have done so far. First, you created a variable called ``||variables:reading||`` to store the ``||input:level of light||`` detected. You then used a ``||logic:conditional statement||`` to show that ``||input:light level||`` whenever you ``||input:pressed the A button||`` on your robot. Finally, you placed all of these blocks inside a ``||basic:forever||`` block to ensure that your program is constantly running. You are really getting good at this! 
+Let’s take a moment to review what you have done so far. First, you created a variable called ``||variables:reading||`` to store the detected ``||input:light level||``. You then used a ``||logic:conditional statement||`` to show that ``||input:light level||`` whenever you ``||input:pressed the A button||`` on your robot. Finally, you placed all of these blocks inside a ``||basic:forever||`` block to ensure that your program is constantly running. You are really getting good at this! 
 
 
 ## Step 8
