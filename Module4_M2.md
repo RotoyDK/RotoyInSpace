@@ -1,5 +1,9 @@
 ### @hideIteration true
 
+```template
+//
+```
+
 # Mission 2
 
 ## Introduction @showdialog
