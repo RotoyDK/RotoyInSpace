@@ -119,7 +119,7 @@ basic.forever(function () {
 
 ## Step 8
 
-Our level is nearly done but it would be nice if our robot showed us pictures on its screen so we could tell if it was level or not. Open the ``||basic:Basic||`` toolbox and three ``||basic:show icon||`` blocks to your conditional statement, one below the ``||logic:if||``, one below the ``||logic:else if||``, and one below ``||logic:else||``. Using the arrows, change each of the icons to whatever picture you like best. Just make sure they are all different. Having different pictures will tell you what you need to fix to make your robot level.
+Our level is nearly done but it would be nice if our robot showed us pictures on its screen so we could tell if it was level or not. Open the ``||basic:Basic||`` toolbox and add three ``||basic:show icon||`` blocks to your conditional statement, one below the ``||logic:if||``, one below the ``||logic:else if||``, and one below ``||logic:else||``. Using the arrows, change each of the icons to whatever picture you like best. Just make sure they are all different. Having different pictures will tell you what you need to fix to make your robot level.
 
 ```block
 export let x = 0
