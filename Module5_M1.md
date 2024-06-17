@@ -23,13 +23,14 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Step 2
 
-Next, we are going to add a special code block that will reset our seismograph every 3 seconds. Open the ``||Module5_M1:Mission 1||`` toolbox, grab the ``||Module5_M1:reset shake counter||`` block and place it under the ``||input:on shake||`` block in your **Workspace**. Before you move on, change the 0s to 3s to complete our reset block.
+Next, we are going to add a special code block that will reset our seismograph every 3 seconds. Open the ``||Module5_M1:Mission 1||`` toolbox, grab the ``||Module5_M1:reset shake counter||`` block and place it under the ``||input:on shake||`` block in your **Workspace**. Before you move on, change the 0s to 3s and place ``||variables:startTime||`` variables in the 2nd spot from ``||variables:Variables||`` toolbox to complete our reset block.
 
 
 ```block
 input.onGesture(Gesture.Shake, function () {
+    export let startTime = 0
     // @highlight
-    Module5_M1.resetShakeCounter(3)
+    Module5_M1.resetShakeCounter(3, startTime)
 })
 ```
 
@@ -43,7 +44,8 @@ Ok, let's start by opening the ``||variables:Variables||`` toolbox! We are going
 
 ```block
 input.onGesture(Gesture.Shake, function () {
-    Module5_M1.resetShakeCounter(3)
+    export let startTime = 0
+    Module5_M1.resetShakeCounter(3, startTime)
     // @highlight
     startTime = 0
     // @highlight
@@ -57,7 +59,8 @@ Let's finish the ``||input:on shake||`` part of our program before taking a mome
 
 ```block
 input.onGesture(Gesture.Shake, function () {
-    Module5_M1.resetShakeCounter(3)
+    export let startTime = 0
+    Module5_M1.resetShakeCounter(3, startTime)
     // @highlight
     startTime = input.runningTime()
     shakeCount += 1
@@ -83,7 +86,8 @@ Did you notice that something is missing from our program? That's right! We stil
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
-    Module5_M1.resetShakeCounter(3)
+    export let startTime = 0
+    Module5_M1.resetShakeCounter(3, startTime)
     startTime = input.runningTime()
     shakeCount += 1
     basic.showNumber(shakeCount)
