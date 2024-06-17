@@ -226,15 +226,14 @@ namespace Module3_M1 {
 /**
  * Custom blocks
  */
-//% weight=100 color=#43228e icon="\uf197" block="Mission 2"
+//% weight=100 color=#43228e icon="\uf197" block="Mission 1"
 namespace Module5_M1 {
-
-    export let startTime: number
     export let shakeCount: number
 
     //% weight=90
-    //% block="reset shake counter every %resetTime s"
-    export function resetShakeCounter(resetTime: number) {
+    //% block="reset shake counter every %resetTime s at %startTime"
+    export function resetShakeCounter(resetTime: number, startTime: number) {
+        basic.showNumber(Math.round((input.runningTime() - startTime) / 1000))
         if ((input.runningTime() - startTime) / 1000 >= resetTime) {
             startTime = 0
             shakeCount = 0
