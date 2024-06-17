@@ -2,7 +2,7 @@
 
 ```template
 startTime = 0
-shakeCount = 0
+Mission5_M1.shakeCount = 0
 ```
 
 # Mission 1
