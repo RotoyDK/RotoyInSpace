@@ -1,5 +1,5 @@
 input.onGesture(Gesture.Shake, function () {
-    Module5_M1.resetShakeCounter(3, startTime)
+    shakeCount = Module5_M1.resetShakeCounter(3, startTime, shakeCount)
     startTime = input.runningTime()
     shakeCount += 1
     basic.showNumber(shakeCount)
