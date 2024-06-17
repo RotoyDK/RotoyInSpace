@@ -234,7 +234,7 @@ namespace Module5_M1 {
     //% block="reset shake counter every %resetTime s at %startTime"
     export function resetShakeCounter(resetTime: number, startTime: number) {
         basic.showNumber(Math.round((input.runningTime() - startTime) / 1000))
-        if ((input.runningTime() - startTime) / 1000 >= resetTime) {
+        if (((input.runningTime() - startTime) / 1000) >= resetTime) {
             startTime = 0
             shakeCount = 0
         }
