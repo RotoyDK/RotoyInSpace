@@ -1,8 +1,8 @@
 ### @hideIteration true
 
 ```template
-startTime = 0
-Module5_M1.shakeCount = 0
+let shakeCount = 0
+let startTime = 0
 ```
 
 # Mission 1
@@ -23,14 +23,15 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Step 2
 
-Next, we are going to add a special code block that will reset our seismograph every 3 seconds. Open the ``||Module5_M1:Mission 1||`` toolbox, grab the ``||Module5_M1:reset shake counter||`` block and place it under the ``||input:on shake||`` block in your **Workspace**. Before you move on, change the 0s to 3s and place ``||variables:startTime||`` variables in the 2nd spot from ``||variables:Variables||`` toolbox to complete our reset block.
+Next, we are going to add a special code block that will reset our seismograph every 3 seconds. First, grab ``||variables:set shakeCount to 0||`` block from ``||variables:Variables||`` toolbox, and place it under the ``||input:on shake||`` block in your **Workspace**. Then open the ``||Module5_M1:Mission 1||`` toolbox, grab the ``||Module5_M1:reset shake counter every 0s at 0 with 0||`` block and place is instead 0 in ``||variables:set shakeCount to 0||``. Before you move on, change the 0s to 3s, place ``||variables:startTime||`` variable in the 2nd spot, ``||variables:shakeCount||`` variable in the 3rd spot from ``||variables:Variables||`` toolbox to complete our reset block.
 
 
 ```block
 input.onGesture(Gesture.Shake, function () {
     export let startTime = 0
+    export let shakeCount = 0
     // @highlight
-    Module5_M1.resetShakeCounter(3, startTime)
+    shakeCount = Module5_M1.resetShakeCounter(3, startTime, shakeCount)
 })
 ```
 
@@ -45,7 +46,8 @@ Ok, let's start by opening the ``||variables:Variables||`` toolbox! We are going
 ```block
 input.onGesture(Gesture.Shake, function () {
     export let startTime = 0
-    Module5_M1.resetShakeCounter(3, startTime)
+    export let shakeCount = 0
+    shakeCount = Module5_M1.resetShakeCounter(3, startTime, shakeCount)
     // @highlight
     startTime = 0
     // @highlight
@@ -60,7 +62,8 @@ Let's finish the ``||input:on shake||`` part of our program before taking a mome
 ```block
 input.onGesture(Gesture.Shake, function () {
     export let startTime = 0
-    Module5_M1.resetShakeCounter(3, startTime)
+    export let shakeCount = 0
+    shakeCount = Module5_M1.resetShakeCounter(3, startTime, shakeCount)
     // @highlight
     startTime = input.runningTime()
     shakeCount += 1
@@ -87,9 +90,11 @@ Did you notice that something is missing from our program? That's right! We stil
 ```blocks
 input.onGesture(Gesture.Shake, function () {
     export let startTime = 0
-    Module5_M1.resetShakeCounter(3, startTime)
+    export let shakeCount = 0
+    shakeCount = Module5_M1.resetShakeCounter(3, startTime, shakeCount)
     startTime = input.runningTime()
     shakeCount += 1
+    // @highlight
     basic.showNumber(shakeCount)
 })
 startTime = 0
