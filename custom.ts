@@ -198,24 +198,27 @@ namespace Module3_M1 {
 
     //% weight=90
     //% block="Rock"
+    //% block.loc.da="Sten"
     export function getRock(): number {
         return 1;
     }
 
     //% weight=90
-    //% block="Paper"
+    //% block.loc.da="Papir"
     export function getPaper(): number {
         return 2;
     }
 
     //% weight=90
     //% block="Scissors"
+    //% block.loc.da="Saks"
     export function getScissors(): number {
         return 3;
     }
 
     //% weight=90
     //% block="random rock, paper or scissors"
+    //% block.loc.da="tilfældig sten, papir eller saks"
     //% blockSetVariable=hand
     export function setRandomHand(): number {
         let hand: number = randint(1, 3)
@@ -230,6 +233,7 @@ namespace Module3_M1 {
 namespace Module5_M1 {
     //% weight=90
     //% block="reset shake counter every %resetTime s at %startTime with %shakeCount"
+    //% block.loc.da="nultstil rysteTæller hver %resetTime s ved %startTime med %shakeCount"
     export function resetShakeCounter(resetTime: number, startTime: number, shakeCount: number): number {
         if (((input.runningTime() - startTime) / 1000) >= resetTime) {
             shakeCount = 0
@@ -249,6 +253,7 @@ namespace Module5_M2 {
 
     //% weight=90
     //% block="change shakeCount by 1"
+    //% block.loc.da="ændr rysteTæller af 1"
     export function onShake(): void {
         if ((input.runningTime() - start_time) / 1000 >= 5) {
             start_time = 0
@@ -259,7 +264,8 @@ namespace Module5_M2 {
     }
 
     //% weight=90
-    //% block="set shakeCount to 0" 
+    //% block="set shakeCount to 0"
+    //% block.loc.da="set rysteTæller til 0"
     export function onStart(): void {
         start_time = 0
         shakeCount = 0
@@ -267,6 +273,7 @@ namespace Module5_M2 {
 
     //% weight=90
     //% block="shakeCount"
+    //% block.loc.da="rysteTæller"
     export function getShakeCount(): number {
         return shakeCount;
     }

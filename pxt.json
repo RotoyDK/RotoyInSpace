@@ -35,7 +35,11 @@
         "_locales/da/Module1_M1.md",
         "_locales/da/Module1_M2.md",
         "_locales/da/Module2_M1.md",
-        "_locales/da/Module2_M2.md"
+        "_locales/da/Module2_M2.md",
+        "_locales/da/Module3_M1.md",
+        "_locales/da/Module3_M2.md",
+        "_locales/da/Module5_M1.md",
+        "_locales/da/Module5_M2.md"
     ],
     "testFiles": [
         "test.ts"
