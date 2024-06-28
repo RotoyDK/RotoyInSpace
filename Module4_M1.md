@@ -58,7 +58,7 @@ You can click on the light bulb if you need a hint.
 
 
 ```block
-export let maze: game.LedSprite = 0
+export let maze: game.LedSprite[] = 0
 export let speed = 0
 
 basic.forever(function () {
