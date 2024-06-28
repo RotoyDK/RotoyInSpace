@@ -57,7 +57,7 @@ With the movement and starting position of the ship already completed, we will f
 You can click on the light bulb if you need a hint. 
 
 
-```blocks
+```block
 export let maze = [game.createSprite(0, 0)]
 export let speed = 1000
 
@@ -74,7 +74,7 @@ basic.forever(function () {
             }
         }
     }
-    Module4_M1.createMazeLine()
+    maze = Module4_M1.createMazeLine(maze)
     basic.pause(speed)
 })
 ```
