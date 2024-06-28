@@ -34,6 +34,7 @@ Can you find your way through the maze of asteroids without damaging the spacesh
 The Voyager probe is on its way back to Earth. To get there, it will need to pass through a lot of space junk! We will simulate this by programming a maze game! To get you started, we have added a few blocks to your **Workspace**. See those ``||input:A||`` and ``||input:B||`` button blocks? They allow you to move your ship left and right when moving through the maze. Likewise, the ``||basic:on start||`` block tells the program where to position your ship when the game begins. Cool, huh?
 
 ```blocks
+export let score = 0
 export let player: game.LedSprite = null
 player = game.createSprite(2, 4)
 export let speed = 1000
@@ -50,13 +51,13 @@ input.onButtonPressed(Button.B, function () {
 ## Step 2
 
 With the movement and starting position of the ship already completed, we will focus on making the game work. 
-1.  First, open the ``||logic:Logic||`` toolbox and place a ``||logic:if true then||`` block inside the ``||basic:forever||`` block, right under the ``||loops:for element||`` block. 
+1.  First, open the ``||logic:Logic||`` toolbox and place a ``||logic:if true then||`` block inside the ``||basic:forever||`` block, right under the ``||game:wall change y by 1||`` block. 
 2.	Next, go back to the ``||logic:Logic||`` toolbox and this time grab a ``||logic:if true then else||`` block. Place that block inside the ``||logic:if true then||`` block you just added. 
 
 You can click on the light bulb if you need a hint. 
 
 
-```block
+```blocks
 export let maze = [game.createSprite(0, 0)]
 export let speed = 1000
 
