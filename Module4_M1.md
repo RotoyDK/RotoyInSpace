@@ -88,7 +88,7 @@ Our game works by guiding a spaceship through an ever changing maze. If the spac
 4.	Finally, change the last zero to a 4.
 
 ```block
-export let maze = game.LedSprite[]
+export let maze: game.LedSprite[] = 0
 export let speed = 0
 
 basic.forever(function () {
@@ -118,7 +118,7 @@ Lets continue to build our moving maze walls.
 
 
 ```block
-export let maze = game.LedSprite[]
+export let maze: game.LedSprite[] = 0
 export let speed = 0
 
 basic.forever(function () {
@@ -147,7 +147,7 @@ In this step, we will tell the program what to do when a player touches a wall.
 3.	Finally, open the ``||game:Game||`` toolbox again and drag out the ``||game:game over||`` block. Place that under the ``||game:set score score||`` block you just added.
 
 ```block
-export let maze = game.LedSprite[]
+export let maze: game.LedSprite[] = 0
 export let speed = 0
 export let score = 0
 
@@ -183,7 +183,7 @@ So we have made the maze move and decided what happens when the player touches a
 4. Finish this step by changing ``||variables:sprite||`` to ``||variables:score||`` using the pull down arrow.
 
 ```block
-export let maze = game.LedSprite[]
+export let maze: game.LedSprite[] = 0
 export let speed = 0
 export let score = 0
 
@@ -217,7 +217,7 @@ Our maze game is almost done and you have done an incredible job so far. Lets fi
 5.	Finally, change the ``||variables:list||`` variable to ``||variables:maze||`` using the arrow.    
 
 ```block
-export let maze = game.LedSprite[]
+export let maze: game.LedSprite[] = 0
 export let speed = 0
 export let score = 0
 
