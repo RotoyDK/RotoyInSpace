@@ -210,7 +210,7 @@ basic.forever(function () {
 ## Step 8
 
 Our maze game is almost done and you have done an incredible job so far. Lets finish strong! 
-1.	Open the ``||arrays:Arrays||`` toolbox and add the ``||arrays:list remove value at 0||`` block to your **Workspace**
+1.	Open the ``||arrays:Arrays||`` toolbox and add the ``||arrays:list remove value at 0||`` block under ``||variables:change sprite by 1||`` block.
 2.	Then open the ``||arrays:Arrays||`` toolbox again and this time add the ``||arrays:list find index of||`` block.
 3.	Add the ``||arrays:list find index of||`` block to the ``||arrays:list remove value at||`` block by inserting it where the 0 is.
 4.	Open the ``||variables:Variables||`` toolbox and grab the ``||variables:wall||`` block. Place it at the end of ``||arrays:list find index of||`` block. 
