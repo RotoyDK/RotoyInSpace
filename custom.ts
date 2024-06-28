@@ -233,7 +233,7 @@ namespace Module3_M1 {
 namespace Module4_M1 {
     //% weight=90
     //% block="create maze"
-    export function createMazeLine() {
+    export function createMazeLine(maze: game.LedSprite[]) {
         let wallAmount = 0
         for (let i = 0; i <= 4; i++) {
             if (randint(0, 1) == 0) {
