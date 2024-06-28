@@ -232,8 +232,8 @@ namespace Module3_M1 {
 //% weight=100 color=#43228e icon="\uf197" block="Mission 1"
 namespace Module4_M1 {
     //% weight=90
-    //% block="create maze"
-    export function createMazeLine(maze: game.LedSprite[]) {
+    //% block="create maze %maze"
+    export function createMazeLine(maze: game.LedSprite[]): game.LedSprite[] {
         let wallAmount = 0
         for (let i = 0; i <= 4; i++) {
             if (randint(0, 1) == 0) {
@@ -244,6 +244,8 @@ namespace Module4_M1 {
         if (wallAmount == 5) {
             maze.removeAt(maze.length - randint(0, 4))
         }
+
+        return maze
     }
 }
 

@@ -18,7 +18,7 @@ basic.forever(function () {
     for (let wall of maze) {
     wall.change(LedSpriteProperty.Y, 1)
     }
-    Module4_M1.createMazeLine(maze)
+    maze = Module4_M1.createMazeLine(maze)
     basic.pause(speed)
 })
 ```
