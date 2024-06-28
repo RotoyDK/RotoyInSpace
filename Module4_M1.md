@@ -58,8 +58,8 @@ You can click on the light bulb if you need a hint.
 
 
 ```block
-export let maze = [game.createSprite(0, 0)]
-export let speed = 1000
+export let maze = game.LedSprite[]
+export let speed = 0
 
 basic.forever(function () {
     for (let wall of maze) {
@@ -88,8 +88,8 @@ Our game works by guiding a spaceship through an ever changing maze. If the spac
 4.	Finally, change the last zero to a 4.
 
 ```block
-export let maze = [game.createSprite(0, 0)]
-export let speed = 1000
+export let maze = game.LedSprite[]
+export let speed = 0
 
 basic.forever(function () {
     for (let wall of maze) {
@@ -103,7 +103,7 @@ basic.forever(function () {
             }
         }
     }
-    Module4_M1.createMazeLine()
+    maze = Module4_M1.createMazeLine(maze)
     basic.pause(speed)
 })
 ```
@@ -118,8 +118,8 @@ Lets continue to build our moving maze walls.
 
 
 ```block
-export let maze = [game.createSprite(0, 0)]
-export let speed = 1000
+export let maze = game.LedSprite[]
+export let speed = 0
 
 basic.forever(function () {
     for (let wall of maze) {
@@ -134,7 +134,7 @@ basic.forever(function () {
             }
         }
     }
-    Module4_M1.createMazeLine()
+    maze = Module4_M1.createMazeLine(maze)
     basic.pause(speed)
 })
 ```
@@ -147,9 +147,9 @@ In this step, we will tell the program what to do when a player touches a wall.
 3.	Finally, open the ``||game:Game||`` toolbox again and drag out the ``||game:game over||`` block. Place that under the ``||game:set score score||`` block you just added.
 
 ```block
-export let maze = [game.createSprite(0, 0)]
+export let maze = game.LedSprite[]
+export let speed = 0
 export let score = 0
-export let speed = 1000
 
 basic.forever(function () {
     for (let wall of maze) {
@@ -165,7 +165,7 @@ basic.forever(function () {
             }
         }
     }
-    Module4_M1.createMazeLine()
+    maze = Module4_M1.createMazeLine(maze)
     basic.pause(speed)
 })
 ```
@@ -183,9 +183,9 @@ So we have made the maze move and decided what happens when the player touches a
 4. Finish this step by changing ``||variables:sprite||`` to ``||variables:score||`` using the pull down arrow.
 
 ```block
-export let maze = [game.createSprite(0, 0)]
+export let maze = game.LedSprite[]
+export let speed = 0
 export let score = 0
-export let speed = 1000
 
 basic.forever(function () {
     for (let wall of maze) {
@@ -202,7 +202,7 @@ basic.forever(function () {
             }
         }
     }
-    Module4_M1.createMazeLine()
+    maze = Module4_M1.createMazeLine(maze)
     basic.pause(speed)
 })
 ```
@@ -217,9 +217,9 @@ Our maze game is almost done and you have done an incredible job so far. Lets fi
 5.	Finally, change the ``||variables:list||`` variable to ``||variables:maze||`` using the arrow.    
 
 ```block
-export let maze = [game.createSprite(0, 0)]
+export let maze = game.LedSprite[]
+export let speed = 0
 export let score = 0
-export let speed = 1000
 
 basic.forever(function () {
     for (let wall of maze) {
@@ -236,7 +236,7 @@ basic.forever(function () {
             }
         }
     }
-    Module4_M1.createMazeLine()
+    maze = Module4_M1.createMazeLine(maze)
     basic.pause(speed)
 })
 ```
